@@ -1,0 +1,211 @@
+/* Reseteo  */
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  background-color: #a4957e;
+  height: 100%;
+  width: 100%;
+}
+/* Contenedor Principal */
+.contenedor {
+  height: 600px;
+  min-width: 1024px;
+  overflow: hidden;
+  width: 1024px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.8), -1px -1px 10px 0 rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.8), -1px -1px 10px 0 rgba(0, 0, 0, 0.8);
+  -ms-box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.8), -1px -1px 10px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.8), -1px -1px 10px 0 rgba(0, 0, 0, 0.8);
+}
+.inicio {
+  background-color: transparent;
+  bottom: 6em;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 500px;
+  height: 300px;
+  z-index: 3;
+  margin: auto;
+}
+.block {
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 600px;
+  width: 100%;
+}
+/* Contenedor 1 */
+.contenedor_izquierda {
+  display: inline-block;
+  float: left;
+  height: 600px;
+  overflow-y: scroll;
+  position: relative;
+  width: 512px;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contenedor_izquierda::-webkit-scrollbar {
+  width: 0px;
+}
+.contenedor_izquierda::-moz-scrollbar {
+  width: 0px;
+}
+.contenedor_izquierda::-ms-scrollbar {
+  width: 0px;
+}
+.contenedor_izquierda::-o-scrollbar {
+  width: 0px;
+}
+.contenedor_izquierda .tira_izquierda {
+  position: relative;
+}
+.contenedor_izquierda .menu_izquierda {
+  background-image: url(/img/menu_izquierda.jpg);
+  cursor: pointer;
+}
+.contenedor_izquierda .intro_izquierda_1 {
+  background-image: url(/img/intro_izquierda1.jpg);
+  display: block;
+}
+.contenedor_izquierda .intro_izquierda_2 {
+  background-image: url(/img/intro_izquierda2.jpg);
+  display: block;
+}
+.contenedor_izquierda .intro_izquierda_3 {
+  background-image: url(/img/intro_izquierda3.jpg);
+  display: block;
+}
+.contenedor_izquierda .intro_izquierda_4 {
+  background-image: url(/img/intro_izquierda4.jpg);
+  display: block;
+}
+.contenedor_izquierda .intro_izquierda_5 {
+  background-image: url(/img/intro_izquierda5.jpg);
+  display: block;
+}
+/* Contenedor 2 */
+.contenedor_derecha {
+  display: inline-block;
+  float: left;
+  height: 600px;
+  overflow-y: scroll;
+  position: relative;
+  width: 512px;
+  -webkit-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contenedor_derecha::-webkit-scrollbar {
+  width: 0px;
+}
+.contenedor_derecha::-moz-scrollbar {
+  width: 0px;
+}
+.contenedor_derecha::-ms-scrollbar {
+  width: 0px;
+}
+.contenedor_derecha::-o-scrollbar {
+  width: 0px;
+}
+.contenedor_derecha .tira_derecha {
+  position: relative;
+  top: -3000px;
+}
+.contenedor_derecha .menu_derecha {
+  background-image: url(/img/menu_derecha.jpg);
+  cursor: pointer;
+  position: relative;
+}
+.contenedor_derecha .intro_derecha_1 {
+  background-image: url(/img/intro_derecha1.jpg);
+  display: block;
+}
+.contenedor_derecha .intro_derecha_2 {
+  background-image: url(/img/intro_derecha2.jpg);
+  display: block;
+}
+.contenedor_derecha .intro_derecha_3 {
+  background-image: url(/img/intro_derecha3.jpg);
+  display: block;
+}
+.contenedor_derecha .intro_derecha_4 {
+  background-image: url(/img/intro_derecha4.jpg);
+  display: block;
+}
+.contenedor_derecha .intro_derecha_5 {
+  background-image: url(/img/intro_derecha5.jpg);
+  display: block;
+}
+
+
+
+.barra_izquierda {
+  position: absolute;
+  top: 200px;
+  width: 120px;
+  height: 169px;
+  left: -90px;
+  background-image: url(/img/barralateral.png);
+  z-index: 3;
+  -webkit-transition: all 0.5s ease-in-out;
+  -khtml-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* Barra derecha */
+.barra_derecha {
+  position: absolute;
+  top: 160px;
+  width: 78px;
+  height: 251px;
+  right: -48px;
+  background-image: url(/img/barralateralderecha.png);
+  z-index: 3;
+  -webkit-transition: all 0.5s ease-in-out;
+  -khtml-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+nav {
+position: relative;
+top: 42px;
+width: 100px;
+margin-left: 17px;
+}
+ul ol {
+margin-bottom: 18px;
+margin-top: 7px;
+margin-left: 9px;
+}
+a {
+text-decoration: none;
+color: #523429;
+font-weight: bold;
+}
