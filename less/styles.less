@@ -1,0 +1,509 @@
+// Variables 
+@color_fondo: rgba(0, 0, 0, 0.8);
+@black : rgba(0,0,0,1);
+@float_left : left;
+@scroll : scroll;
+@base_altura_bloque: 600px;
+@width_ppal: 1024px;
+
+// Transiciones
+.transicion(@propiedad: all,@duracion: .5s, @tipo_transition: ease-in-out){
+    .property_(transition, @propiedad @duracion @tipo_transition);
+}
+
+// Métodos Box-Sizing
+.box-sizing(@param:border-box;){
+    .property_(box-sizing, @param);
+}
+
+// Centrar Objetos Absolutos
+.centrar_caja_absoluta(){
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+// Prefijos todos los navegadores
+.property_(@property, @value) {
+    -webkit-@{property}: @value;
+     -khtml-@{property}: @value;
+       -moz-@{property}: @value;
+        -ms-@{property}: @value;
+         -o-@{property}: @value;
+            @{property}: @value;
+}
+
+// Sombras
+.sombra(@x: 0, @y: 0, @blur: 2px, @anchura_sombra: 0, @color: black,@forma) when (@forma > inset){
+    .property_(box-shadow, @x @y @blur @anchura_sombra @color);
+       
+}
+.sombra(@x: 0, @y: 0, @blur: 2px, @anchura_sombra: 0, @color: black,@forma) when (@forma = inset){
+     .property_(box-shadow, @x @y @blur @anchura_sombra @color @forma);
+}
+
+// Sombra doble
+.doble_sombra(@x: 0, @y: 0, @blur: 2px, @anchura_sombra: 0, @color: black,@x2: 0, @y2: 0, @blur2: 2px, @anchura_sombra2: 0, @color2: black){
+    -webkit-box-shadow: @x @y @blur @anchura_sombra @color,@x2 @y2 @blur2 @anchura_sombra @color2;
+       -moz-box-shadow: @x @y @blur @anchura_sombra @color,@x2 @y2 @blur2 @anchura_sombra @color2;
+        -ms-box-shadow: @x @y @blur @anchura_sombra @color,@x2 @y2 @blur2 @anchura_sombra @color2;
+            box-shadow: @x @y @blur @anchura_sombra @color,@x2 @y2 @blur2 @anchura_sombra @color2;
+}
+
+/* Reseteo  */
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body,html{
+    background-color: @color_fondo;
+    height: 100%;
+    width: 100%;
+}
+
+/* Contenedor Principal */
+.contenedor{
+    height: @base_altura_bloque;
+    min-width: @width_ppal;
+    overflow: hidden;
+    width: @width_ppal;
+    .centrar_caja_absoluta();
+    .doble_sombra(1px, 1px, 10px, 0, rgba(255, 255, 255, 0.8),-1px, -1px, 10px, 0, rgba(255, 255, 255, 0.8));
+}
+
+ // Cuadro para dar click al inicio
+.inicio{
+    background-color: transparent;
+    bottom: 10em;
+    cursor: pointer;
+    position: absolute;
+    left: 17px;
+    right: 0;
+    width: 335px;
+    height: 163px;
+    z-index: 3;
+    margin: auto;
+    &:hover{
+        background-color: rgba(58, 51, 43,.09);
+        border-radius: 10px;
+    }
+}
+
+// bloque base
+.block{
+    display: block;
+    .box-sizing();
+    height: @base_altura_bloque;
+    width: 100%;
+}
+
+
+/* Barra izquierda */
+.barra_izquierda{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 140px;
+    height: 254px;
+    left: -90px;
+    background-image: url(/img/menu/secuencia/barralateral.png);
+    z-index: -1;
+    margin: auto;
+    .transicion();
+    
+    > a{
+        display: block;
+        height: 20%;
+        width: 100%;
+    }
+    
+    a > div{
+        background-repeat: no-repeat;
+        background-position: right;
+        cursor: pointer;
+        display: block;
+        float: right;
+        height: 100%;
+        width: 90%;
+        margin-right: 10px;
+    }
+    
+    .selva{
+        background-image: url(/img/menu/secuencia/selva.png);
+        &:hover{
+            background-image: url(/img/menu/secuencia/selvah.png) !important;
+        }
+    }
+    .pasado{
+        background-image: url(/img/menu/secuencia/pasado.png);
+        &:hover{
+            background-image: url(/img/menu/secuencia/pasadoh.png) !important;
+        }
+    }
+    .riqueza{
+        background-image: url(/img/menu/secuencia/riqueza.png);
+        &:hover{
+            background-image: url(/img/menu/secuencia/riquezah.png) !important;
+        }
+    }
+    .sabiduria{
+        background-image: url(/img/menu/secuencia/sabiduria.png);
+        &:hover{
+            background-image: url(/img/menu/secuencia/sabiduriah.png) !important;
+        }
+    }
+    .huida{
+        background-image: url(/img/menu/secuencia/huida.png);
+        &:hover{
+            background-image: url(/img/menu/secuencia/huidah.png) !important;
+        }
+    }
+}
+
+/* Barra derecha */
+.barra_derecha{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 78px;
+    height: 251px;
+    right: -60px;
+    background-image: url(/img/menu/secuencia/barralateralderecha.png);
+    z-index: -1;
+    margin: auto;
+    .transicion();
+    
+    > div{
+        float: left;
+        height: 20%;
+        width: 80%;
+        display: block;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    .mensajes{
+        background-image: url(/img/iconos/comentarios.png);
+        &:hover{
+            background-image: url(/img/iconos/comentariosh.png) !important;
+        }
+    }
+    .videos{
+        background-image: url(/img/iconos/video.png);
+        &:hover{
+            background-image: url(/img/iconos/videoh.png);
+        }
+    }
+    .audios{
+        background-image: url(/img/iconos/audio.png);
+        &:hover{
+           background-image: url(/img/iconos/audioh.png); 
+        }
+    }
+    .imagenes{
+        background-image: url(/img/iconos/imagen.png);
+        &:hover{
+            background-image: url(/img/iconos/imagenh.png);
+        }
+    }
+    .materiales{
+        background-image: url(/img/iconos/material.png);
+        &:hover{
+            background-image: url(/img/iconos/materialh.png);
+        }
+    }
+}
+
+/* Contenedor 1 */
+.contenedor_izquierda{
+    display: inline-block;
+    float: @float_left;
+    height: @base_altura_bloque;
+    overflow-y: hidden;
+    position: relative;
+    width: @width_ppal/2;
+    .box-sizing();
+    
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+    &::-moz-scrollbar {
+        width: 0px;
+    }
+    &::-ms-scrollbar {
+        width: 0px;
+    }
+    &::-o-scrollbar {
+        width: 0px;
+    }
+    
+    // Tira izquierda
+    .tira_izquierda{
+        position:relative;
+    }
+    
+    // Menu izquierda
+    .menu_izquierda{
+        background-image: url(/img/menu/inicio/menu_izquierda.jpg);
+        cursor: pointer;
+    }
+    
+    // Intros
+    .intro_izquierda_1{
+        background-image: url(/img/intro/intro_izquierda1.jpg);
+    }
+    .intro_izquierda_2{
+        background-image: url(/img/intro/intro_izquierda2.jpg);
+    }
+    .intro_izquierda_3{
+        background-image: url(/img/intro/intro_izquierda3.jpg);
+    }
+    .intro_izquierda_4{
+        background-image: url(/img/intro/intro_izquierda4.jpg);
+    }
+    .intro_izquierda_5{
+        background-image: url(/img/intro/intro_izquierda5.jpg);
+    }
+    
+    // Menu Izquierda
+    .selva{
+        .superior{ background-image: url(/img/menu/principal/selva_superior.png); }
+        .inferior{ background-image: url(/img/menu/principal/selva_inferior.png); }
+        .guion{ background-image: url(/img/menu/principal/1/1.png); }
+    }
+    .selva,.pasado,.rebeldia,.riqueza,.sabiduria{
+        position: relative;
+        > div{
+            background-size: cover;
+            position: relative;
+            width: 100%;
+            .transicion(all, .2s, ease-in-out);
+        }
+        
+        .superior{
+            cursor: pointer;
+            top: 0;
+            height: 550px;
+            z-index: 4;
+        }
+        .inferior{
+            bottom: 0;
+            height: 50px;
+            z-index: 4;
+        }
+        .guion{
+            top: 20px;
+            background-color: white;
+            height: 510px;
+            position: absolute;
+        }
+        .paginacion{
+            position: absolute;
+            bottom: 5.5em;
+            width: 120px;
+            height: 35px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            .left,.right{width: 40px; height:100%; cursor: pointer; }
+            .left{float: left; background-image: url(/img/menu/principal/iconos/left.png); }
+            .right{float: right; background-image: url(/img/menu/principal/iconos/right.png); }
+        }
+        .material{
+            height: 100px;
+            bottom: 70px;
+            background-image: url(/img/menu/principal/iconos/material_interactivo_fondo.png);
+            z-index: -1;
+            .transicion();
+            &:hover{
+                bottom: 130px;
+                z-index: 2;
+            }
+            
+            h2{
+                padding-top:.25em;
+                text-transform: uppercase;
+                font-size: 24px;
+                font-family: "Pathway Gothic One" !important;
+                letter-spacing: 4px;
+                font-weight: bold;
+                color: rgb(102, 47, 0);
+                text-align: center;
+                font-family: Helvetica;
+            }
+        }
+    }
+    .pasado{
+        .superior{ background-image: url(/img/menu/principal/pasado_superior.png); }
+        .inferior{ background-image: url(/img/menu/principal/pasado_inferior.png); }
+    }
+    .rebeldia{
+        .superior{ background-image: url(/img/menu/principal/rebeldia_superior.png); }
+        .inferior{ background-image: url(/img/menu/principal/rebeldia_inferior.png); }
+    }
+    .riqueza{
+        .superior{ background-image: url(/img/menu/principal/riqueza_superior.png); }
+        .inferior{ background-image: url(/img/menu/principal/riqueza_inferior.png); }
+    }
+    .sabiduria{
+        .superior{ background-image: url(/img/menu/principal/sabiduria_superior.png); }
+        .inferior{ background-image: url(/img/menu/principal/sabiduria_inferior.png); }
+    }
+}
+
+/* Contenedor 2 */
+.contenedor_derecha{
+    display: inline-block;
+    float: @float_left;
+    height: @base_altura_bloque;
+    overflow: inherit;
+    overflow-y: hidden;
+    position: relative;
+    width: @width_ppal/2;
+    .box-sizing();
+    
+    &::-webkit-scrollbar {
+        width: 0px;
+    }
+    &::-moz-scrollbar {
+        width: 0px;
+    }
+    &::-ms-scrollbar {
+        width: 0px;
+    }
+    &::-o-scrollbar {
+        width: 0px;
+    }
+    
+    // Tira Derecha
+    .tira_derecha{
+        position:relative;
+        top: -3000px;
+    }
+    
+    // Menu Derecha
+    .menu_derecha{
+        background-image: url(/img/menu/inicio/menu_derecha.jpg);
+    }
+    
+    // Intros
+    .intro_derecha_1{
+        background-image: url(/img/intro/intro_derecha1.jpg);
+    }
+    .intro_derecha_2{
+        background-image: url(/img/intro/intro_derecha2.jpg);
+    }
+    .intro_derecha_3{
+        background-image: url(/img/intro/intro_derecha3.jpg);
+    }
+    .intro_derecha_4{
+        background-image: url(/img/intro/intro_derecha4.jpg);
+    }
+    .intro_derecha_5{
+        background-image: url(/img/intro/intro_derecha5.jpg);
+    }
+    
+    // Secuencias
+    .secuencia{
+        position: relative;
+        background-image: url(/img/secuencias/fondo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        .parte1{
+            background-position: 0 0;
+            position: relative;
+            display: block;
+            cursor: pointer;
+            height: @base_altura_bloque / 2;
+            top: 0px;
+            z-index: 6;
+            .transicion(all, 0.5s, linear);
+        }
+        .parte2{
+            background-position: 0 0;
+            position: relative;
+            display: block;
+            cursor: pointer;
+            height: @base_altura_bloque / 2;
+            bottom: 0px;
+            z-index: 6;
+            .transicion(all, 0.5s, linear);
+        }
+        .texto{
+            width: 100%;
+            height: 530px;
+            background-color: transparent;
+            margin: 35px 0;
+            top: 0;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: -10px 0px;
+            background-size: 106%;
+            z-index: -1;
+            .transicion(all, .8s , ease-out);
+        }
+        .paginacion{
+            position: absolute;
+            bottom: 2.88em;
+            margin: auto;
+            left: 32px;
+            right: 0;
+            z-index: 5;
+            width: 70px;
+            height: 35px;
+            display: none;
+            
+            .izquierda{
+                width: 30px;
+                float: left;
+                height: 100%;
+                background-image: url(/img/iconos/left.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                .transicion(all, .3s, ease-in-out);
+                &:hover{
+                    background-image: url(/img/iconos/lefth.png);
+                }
+            }
+            .derecha{
+                width: 30px;
+                float: right;
+                height: 100%;
+                cursor: pointer;
+                background-image: url(/img/iconos/right.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                 .transicion(all, .3s, ease-in-out);
+                &:hover{
+                    background-image: url(/img/iconos/righth.png);
+                }
+            }
+            
+        }
+        .atarraya{
+            background-image: url(/img/iconos/atarraya.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 0.3em;
+            left: 2.5em;
+            width: 117px;
+            height: 92px;
+            z-index: 3;
+            cursor: pointer;
+            &:hover{
+                background-image: url(/img/iconos/atarrayah.png);
+            }
+        }
+    }
+}
