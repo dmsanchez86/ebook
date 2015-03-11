@@ -42,7 +42,7 @@ function cargar_documento(){
         var partes = $(this).find("div[paginas]");
         partes.each(function(olx,oel){
             $mycontador++;
-            $(this).css("background-image","url(/img/menu/secuencia/"+ $mycontador +".png)");
+            $(this).css("background-image","url(../www/img/menu/secuencia/"+ $mycontador +".png)");
         });
     });
     
@@ -122,7 +122,7 @@ function cargar_documento(){
                         derecha.css("display","block");
                         
                         if (activo>0) { // Si la variable activa no llega a 0 se cambia el texto
-                            $($myparent).find(".texto").css("background-image","url(/img/secuencias/"+carpeta+"/"+rutas_imagenes[activo-1]+".png)"); // cambio el fondo del texto por el anterior
+                            $($myparent).find(".texto").css("background-image","url(../www/img/secuencias/"+carpeta+"/"+rutas_imagenes[activo-1]+".png)"); // cambio el fondo del texto por el anterior
                             paginacion.attr("activo",(activo-1)); // se cambia el atributo de la paginacion
                             activo = parseInt(paginacion.attr("activo")); //  se le asigna el valor a la variable activo
                         }
@@ -137,7 +137,7 @@ function cargar_documento(){
                         izquierda.css("display","block");
                         
                         if (activo < (rutas_imagenes.length-1)) { // si la variable activa no llega al tope del arreglo
-                            $($myparent).find(".texto").css("background-image","url(/img/secuencias/"+carpeta+"/"+rutas_imagenes[activo+1]+".png)"); // cambio el fondo del texto por el siguiente
+                            $($myparent).find(".texto").css("background-image","url(../www/img/secuencias/"+carpeta+"/"+rutas_imagenes[activo+1]+".png)"); // cambio el fondo del texto por el siguiente
                             paginacion.attr("activo",(activo+1)); // se cambia el atributo de la paginacion
                             activo = parseInt(paginacion.attr("activo")); //  se le asigna el valor a la variable activo
                         }
@@ -159,7 +159,7 @@ function cargar_documento(){
                     $($myparent).find(".parte2").css("bottom","-265px");
                     $($myparent).find(".barra_derecha").css("z-index","5"); // se muestran los dos menus laterales
                     $($myparent).find(".barra_izquierda").css("z-index","5");
-                    $($myparent).find(".texto").css("background-image","url(/img/secuencias/"+carpeta+"/"+rutas_imagenes[0]+".png)");
+                    $($myparent).find(".texto").css("background-image","url(../www/img/secuencias/"+carpeta+"/"+rutas_imagenes[0]+".png)");
                     $($myparent).find(".texto").css("z-index","3");
                     contenedor_derecha.style.overflowY  = "hidden"; // se oculta el scroll para que la sección quede fija
                 });
@@ -209,7 +209,7 @@ function cargar_documento(){
                         derecha.css("display","block");
                         
                         if (activo>0) {
-                            $($myparent).find(".texto").css("background-image","url(/img/secuencias/"+carpeta+"/"+rutas_imagenes[activo-1]+".png)");
+                            $($myparent).find(".texto").css("background-image","url(../www/img/secuencias/"+carpeta+"/"+rutas_imagenes[activo-1]+".png)");
                             paginacion.attr("activo",(activo-1));
                              activo = parseInt(paginacion.attr("activo"));
                         }
@@ -225,7 +225,7 @@ function cargar_documento(){
                         
                         if (activo < (rutas_imagenes.length-1)) {
                             console.log(typeof mirutaactual);
-                            $($myparent).find(".texto").css("background-image","url(/img/secuencias/"+carpeta+"/"+rutas_imagenes[activo+1]+".png)");
+                            $($myparent).find(".texto").css("background-image","url(../www/img/secuencias/"+carpeta+"/"+rutas_imagenes[activo+1]+".png)");
                             paginacion.attr("activo",(activo+1));
                              activo = parseInt(paginacion.attr("activo"));
                         }
@@ -247,7 +247,7 @@ function cargar_documento(){
                     $($myparent).find(".parte1").css("top","-265px");
                     $($myparent).find(".barra_derecha").css("z-index","5"); // se muestran los dos menus laterales
                     $($myparent).find(".barra_izquierda").css("z-index","5");
-                    $($myparent).find(".texto").css("background-image","url(/img/secuencias/"+carpeta+"/"+rutas_imagenes[0]+".png)");
+                    $($myparent).find(".texto").css("background-image","url(../www/img/secuencias/"+carpeta+"/"+rutas_imagenes[0]+".png)");
                     $($myparent).find(".texto").css("z-index","3");
                     contenedor_derecha.style.overflowY  = "hidden"; // se oculta el scroll para que la sección quede fija
                 });
@@ -403,7 +403,7 @@ function links(){
             imagen =  links_barra_izquierda[i].lastChild.className;
             $(links_barra_izquierda[i]).children().css("cursor","no-drop");
             if(anterior == l){
-                $(links_barra_izquierda[i]).children().css("background-image","url(/img/menu/secuencia/"+imagen+"h.png)");
+                $(links_barra_izquierda[i]).children().css("background-image","url(../www/img/menu/secuencia/"+imagen+"h.png)");
                 $(links_barra_izquierda[i]).children().css("cursor","pointer");
                 $(links_barra_izquierda[i]).children().attr("title","Mostrar");
             }
@@ -414,7 +414,7 @@ function links(){
             imagen =  links_barra_izquierda[i].lastChild.className;
             console.log("imagen: "+imagen);
             $(links_barra_izquierda[i]).children().css("cursor","pointer");
-            $(links_barra_izquierda[i]).children().css("background-image","url(/img/menu/secuencia/"+imagen+".png)");
+            $(links_barra_izquierda[i]).children().css("background-image","url(../www/img/menu/secuencia/"+imagen+".png)");
             $(links_barra_izquierda[i]).children().attr("title","Cerrar");
         }
     }
