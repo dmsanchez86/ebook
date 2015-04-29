@@ -1,0 +1,169 @@
+.menuinicio a div{cursor:pointer;background-repeat: no-repeat;}
+.menuinicio a div:hover{border-bottom:2px double rgba(0,0,0,.7); }
+.modalDialog1,
+.modalDialog2,
+.modalDialog3 {
+	position: absolute;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 5%;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	left: -75px;
+	z-index: -1;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	width: 864px;
+	height: 514px;
+}
+
+.modalDialog1 > div,
+.modalDialog2 > div,
+.modalDialog3 > div {
+  height: 525px;
+  position: relative;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background-size: 874px;
+  background-image: url(../img/menu/inicio/almadecuentros1.png);
+}
+.modalDialog2 > div { background-image: url(../img/menu/inicio/bibliografia1.png); }
+.modalDialog3 > div { background-image: url(../img/menu/inicio/creditos1.png); }
+.close {
+	width: 37px;
+	height: 37px;
+	background-image: url(../img/menu/inicio/cerrar.png);
+	background-repeat: no-repeat;
+	position: relative;
+	right: 0px;
+	background-position: 50% 50%;
+	left: 767px;
+	top: 45px;
+	float: left;
+	cursor: pointer;
+}
+.close:hover{color: rgba(40, 26, 18, 0.5);text-shadow: 1px 1px 2px rgba(255,255,255,.5),-1px -1px 2px rgba(255,255,255,.5);}
+
+.contenido {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.detail img {
+    max-height: 100%px;
+    max-width: 100%;
+    height: 80%;
+}
+
+.detail {
+    text-align: center;
+    /*padding: .25em 1em;*/
+    min-height: 330px;
+    position: relative;
+    height: 77vh;
+    overflow: hidden;
+    width: 100%;   
+    float: left;
+}
+
+p.detail-description {
+    color: #fff;
+    font-family: arial;
+    font-size: 11px;
+    line-height: 2;
+}
+
+.grayscale { 
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(grayscale.svg); /* Firefox 4+ */
+  filter: gray; /* IE 6-9 */
+}
+
+.bgLoader {
+  background: rgba(0, 0, 0, 1);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  transform: scale(1.6);
+}
+.loader-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    width: 145px;
+    height: 79px;
+}
+.loader-icon img,.carga,.carga div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 4;
+}
+.carga{
+    z-index: 3;
+    position: relative;
+}
+.carga:after {
+    position: absolute;
+    left: 99%;
+    content: "...";
+    color: rgb(222, 88, 0);
+    bottom: 21%;
+    font-size: 2.3rem;
+    width: 0%;
+    overflow: hidden;
+    -webkit-animation: anchura 1s infinite linear;
+    -moz-animation: anchura 1s infinite linear;
+    animation: anchura 1s infinite linear;
+}
+@-webkit-keyframes anchura{
+    0%{width: 0%;}
+    100%{width: 30%;}
+}
+@-moz-keyframes anchura{
+    0%{width: 0%;}
+    100%{width: 30%;}
+}
+@keyframes anchura{
+    0%{width: 0%;}
+    100%{width: 30%;}
+}
+.carga div{
+    background-color: #f60;
+    background-image: linear-gradient(-45deg,rgba(0,0,0,.45),transparent,rgba(0,0,0,.45),transparent ,rgba(0,0,0,.45) ,transparent);
+    width: 86%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 38%;
+    top: 0;
+    bottom: 0;
+    
+    -webkit-animation: mover 2.5s infinite linear;
+    -moz-animation: mover 2.5s infinite linear;
+    animation: mover 2.5s infinite linear;
+}
+@-webkit-keyframes mover{
+    0%{background-position: 0 0;}    
+    100%{background-position: 200px 0;}    
+}
+@-moz-keyframes mover{
+    0%{background-position: 0 0;}    
+    100%{background-position: 200px 0;}    
+}
+@keyframes mover{
+    0%{background-position: 0 0;}    
+    100%{background-position: 200px 0;}    
+}

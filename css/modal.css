@@ -1,11 +1,14 @@
 .modal-pop-up {
-    background: rgba(0, 0, 0, 0.64);
-    width: 91%;
-    position: absolute;
-    z-index: 99999999;
-    height: 86%;
-    border-radius: 11px;
-    margin: 4%;
+    background: currentcolor;
+    width: 98vw;
+    position: absolute !important;
+    z-index: 99999999 !important;
+    height: 100vh;
+    border-radius: 4px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 .pop-up-header {
@@ -18,45 +21,84 @@
 .pop-up-header img {
     position: absolute;
     width: 5%;
-    left: 97%;
+    left: 94%;
     cursor: pointer;
-    bottom: 38%;
+    bottom: -39px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
 .left-area {
-    /* background: blue; */
-    width: 63%;
-    float: left;
+    background: rgb(33, 33, 36);;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 67vh;
 }
 
 .right-area {
     /* background: green; */
-    float: left;
-    width: 35%;
-    margin-left: 1%;
+    display: block;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pop-up-content {
-    background: violet;
-    width: 96%;
+    background: transparent;
+    width: 90%;
     margin: 0 auto;
 }
 
 
 
 
-.video-list-thumbs{}
-.video-list-thumbs > li{
-    margin-bottom:12px
+.video-list-thumbs{
+    display: flex;
+    margin-top: 1%;
+    height: 100%;
+    overflow: hidden;
+    list-style: none;
+    overflow: auto;
 }
-.video-list-thumbs > li:last-child{}
+.video-list-thumbs > li{
+    margin-bottom: 0;flex: 1;
+    max-width: 200px;
+    max-height: 105px;
+    width: 200px;
+    min-width: 200px ;
+    /* overflow: hidden; */
+    flex-basis: 50%;
+    margin: .15em;
+    background-color: rgb(33, 33, 36);
+    position: relative;
+    height: 100%;
+    border-radius: 2px;
+    transition: all .2s ease-in-out;
+}
+.video-list-thumbs > li:hover{background-color: black;}
 .video-list-thumbs > li > a{
 	display:block;
-	position:relative;
-	background-color: #212121;
-	color: #fff;
-	padding: 8px;
-	border-radius:3px
+	position: absolute;
+	/* background-color: #212121; */
+	/* color: #fff; */
+	padding: .15em;
+	/* border-radius:3px
+; */
+	/* height: 100%; */
+	/* position: absolute; */
+	/* box-sizing: border-box; */
+	overflow: hidden;
+	width: 96%;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	height: auto;
+	min-height: 45%;
+	max-height: 70%;
 }
 .video-list-thumbs > li > a:hover{
 	background-color:#000;
@@ -115,8 +157,9 @@
 }
 
 .container.list-video {
-    max-height: 435px;
-    overflow-y: auto;
+    max-height: 473px;
+    overflow-y: hidden;
+    height: 130px;
 }
 
 .btn-inverse {
@@ -185,7 +228,18 @@
 }
 
 .video-list-thumbs li a img{
-	width:100%;
+	width: 95%;
+	/* max-height: 100%; */
+	height: auto;
+	position: absolute;
+	margin: auto;
+	display: block;
+	/* max-height: 110%; */
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 98%;
 }
 
 .wrap-controls {

@@ -1,0 +1,570 @@
+.area_squareup img{
+    width: 100%;
+}
+
+.area_squaredown img{
+    width: 100%;
+}
+
+.area_squaredown{
+    position: absolute;
+    z-index: 9999;
+}
+
+.area_squareup{
+    position: absolute;
+    z-index: 9999;
+}
+
+.block.secuencia[orden="1"] .area_squareup {
+    top: 73px;
+    left: 0;
+    height: 126px;
+    width: 100%;
+}
+
+.block.secuencia[orden="1"] .area_squareup img{height: 100%;}
+
+.block.secuencia[orden="7"] .area_squareup {
+  top: 191px;
+  left: 140px;
+  height: auto;
+  width: 248px;
+}
+
+.block.secuencia[orden="2"] .area_squareup{
+   position: absolute;
+  z-index: 10;
+  
+   top: 47px;
+}
+
+.block.secuencia[orden="2"] .area_squareup img{
+  height: 81px;
+}
+
+         
+.block.secuencia[orden="1"] .area_squaredown{
+    top: 373px;
+  left: -26px;
+  height: auto;
+  width: 339px;
+}
+                  
+.block.secuencia[orden="3"] .area_squareup{
+  top: 205px;
+  left: 166px;
+  height: auto;
+  width: 189px;
+}
+
+.block.secuencia[orden="4"] .area_squaredown{
+   top: 318px;
+  left: 261px;
+  height: auto;
+  width: 143px;
+}
+
+.block.secuencia[orden="4"] .area_squaredown.c{
+  top: 293px;
+  left: 0px;
+  height: auto;
+  width: 596px;
+  z-index: 9;
+}
+
+.block.secuencia[orden="9"] .area_squareup{
+  top: 106px;
+  left: 154px;
+  height: auto;
+  width: 184px;
+}
+
+.block.secuencia[orden="9"] .area_squareup .preview_div{
+ position:relative;
+ padding:0 0 0 0;
+ margin:0px 0 10px 0px;
+ border:0px solid #d3dbe6;
+}
+
+.block.secuencia[orden="9"] .area_squareup .preview{
+ position:absolute;
+ margin:0;
+ padding:0;
+}
+
+
+
+
+.block.secuencia[orden="9"] .area_squaredown{
+  top: 271px;
+  left: 161px;
+  height: 386px;
+  width: 159px;
+}
+
+.block.secuencia[orden="9"] .area_squaredown .preview_div{
+ position:relative;
+ padding:0 0 0 0;
+ margin:0px 0 10px 0px;
+ border:0px solid #d3dbe6;
+ height:100%;
+}
+
+.block.secuencia[orden="9"] .area_squaredown .preview{
+ position:absolute;
+ margin:0;
+ padding:0;
+}
+
+.block.secuencia[orden="9"] .area_squaredown .preview img{
+ height:100%;
+}
+
+.block.secuencia[orden="9"] .area_squaredown .preview{
+ height:100%;
+}
+
+
+
+
+.block.secuencia[orden="12"] .area_squareup{
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+}
+
+.block.secuencia[orden="12"] .area_squareup .preview_div{
+ position:relative;
+ padding:0 0 0 0;
+ margin:0px 0 10px 0px;
+ border:0px solid #d3dbe6;
+}
+
+.block.secuencia[orden="12"] .area_squareup .preview{
+ position:absolute;
+ margin:0;
+ padding:0;
+}
+
+
+                          
+.area_retrovisor_fix {
+  background-size: cover;
+  z-index: 999999999;
+  width: 100%;
+  height: 155px;
+  position: absolute;
+}
+
+img.fix_background {
+  z-index: 999;
+  position: absolute;
+}
+
+/* Animación de la secuencia 7 */
+.animacion_pluma{
+    height: 600px;
+    width: 80px;
+    background-size: 100%;
+    background-image: url(../img/animacion_secuencias/sprites/4/1.gif);
+    background-color: transparent;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 5%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+/*
+
+* ANIMACIONES MATERIAL INTERACTIVO
+
+*/
+
+/*****************************************/
+/*********** Asentamientos ***************/
+/*****************************************/
+@-webkit-keyframes asentamiento{
+    10%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/1-africaoccidental_senegambia.jpg);}
+    20%,29%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/2-senegambia.jpg);}
+    30%,39%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/3-congomapa.png);}
+    40%,49%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/4-europeos_senegambia.jpg);}
+    50%,59%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/5-explotacio__n_senegambia.jpg);}
+    60%,69%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/6-hombres_senegambia.jpg);}
+    70%,79%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/7-mujeres_senegambia.jpg);}
+    80%,89%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/8-soldados_senegambia.jpg);}
+    90%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/9-territorio_senegambia.jpg);}
+}
+@-moz-keyframes asentamiento{
+    10%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/1-africaoccidental_senegambia.jpg);}
+    20%,29%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/2-senegambia.jpg);}
+    30%,39%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/3-congomapa.png);}
+    40%,49%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/4-europeos_senegambia.jpg);}
+    50%,59%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/5-explotacio__n_senegambia.jpg);}
+    60%,69%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/6-hombres_senegambia.jpg);}
+    70%,79%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/7-mujeres_senegambia.jpg);}
+    80%,89%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/8-soldados_senegambia.jpg);}
+    90%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/9-territorio_senegambia.jpg);}
+}
+@keyframes asentamiento{
+    10%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/1-africaoccidental_senegambia.jpg);}
+    20%,29%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/2-senegambia.jpg);}
+    30%,39%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/3-congomapa.png);}
+    40%,49%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/4-europeos_senegambia.jpg);}
+    50%,59%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/5-explotacio__n_senegambia.jpg);}
+    60%,69%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/6-hombres_senegambia.jpg);}
+    70%,79%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/7-mujeres_senegambia.jpg);}
+    80%,89%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/8-soldados_senegambia.jpg);}
+    90%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/asentamientos/9-territorio_senegambia.jpg);}
+}
+
+/*****************************************/
+/*********** Ecosistemas *****************/
+/*****************************************/
+@-webkit-keyframes ecosistema{
+    0%,100%,13%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/1-houseconstruction_ecosistema.jpg);}
+    14%,27%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/2-aldeaSierraleona_ecosistema.jpg);}
+    28%,41%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/3-atardecer_ecosistema.jpg);}
+    42%,55%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/4-casasierraleona_ecosistema.jpg);}
+    56%,77%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/5-cocina_ecosistema.jpg);}
+    78%,83%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/6-mercado_ecosistema.jpg);}
+    84%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/7-vivienda_ecosistema.jpg);}
+}
+@-moz-keyframes ecosistema{
+    0%,100%,13%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/1-houseconstruction_ecosistema.jpg);}
+    14%,27%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/2-aldeaSierraleona_ecosistema.jpg);}
+    28%,41%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/3-atardecer_ecosistema.jpg);}
+    42%,55%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/4-casasierraleona_ecosistema.jpg);}
+    56%,77%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/5-cocina_ecosistema.jpg);}
+    78%,83%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/6-mercado_ecosistema.jpg);}
+    84%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/7-vivienda_ecosistema.jpg);}
+}
+@keyframes ecosistema{
+    0%,100%,13%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/1-houseconstruction_ecosistema.jpg);}
+    14%,27%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/2-aldeaSierraleona_ecosistema.jpg);}
+    28%,41%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/3-atardecer_ecosistema.jpg);}
+    42%,55%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/4-casasierraleona_ecosistema.jpg);}
+    56%,77%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/5-cocina_ecosistema.jpg);}
+    78%,83%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/6-mercado_ecosistema.jpg);}
+    84%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/ecosistema/7-vivienda_ecosistema.jpg);}
+}
+
+/*****************************************/
+/*********** Extracción ******************/
+/*****************************************/
+@-webkit-keyframes extraccion{
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/1-alimento.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/2-cuadrillaesclavos.jpg);}
+    40%,59%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/3-extraccion.jpg);}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/4-mina_extraccionrecursos.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/5-mineria_extraccionrecursos.jpg);}
+}
+@-moz-keyframes extraccion{
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/1-alimento.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/2-cuadrillaesclavos.jpg);}
+    40%,59%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/3-extraccion.jpg);}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/4-mina_extraccionrecursos.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/5-mineria_extraccionrecursos.jpg);}
+}
+@keyframes extraccion   {
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/1-alimento.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/2-cuadrillaesclavos.jpg);}
+    40%,59%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/3-extraccion.jpg);}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/4-mina_extraccionrecursos.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/extraccion/5-mineria_extraccionrecursos.jpg);}
+}
+
+/*****************************************/
+/*********** Raices **********************/
+/*****************************************/
+@-webkit-keyframes raices{
+    0%,100%,15%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/1-ciudadkano_raices.jpg);}
+    16%,32%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/2-kingdom_of_loango_raices.jpg);}
+    33%,47%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/3-senegal_raices.jpg);}
+    48%,63%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/4-guinea_raices.jpg);}
+    64%,79%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/5-senegambia_raices.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/6-vestimenta_raices.jpg);}
+}
+@-moz-keyframes raices{
+    0%,100%,15%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/1-ciudadkano_raices.jpg);}
+    16%,32%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/2-kingdom_of_loango_raices.jpg);}
+    33%,47%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/3-senegal_raices.jpg);}
+    48%,63%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/4-guinea_raices.jpg);}
+    64%,79%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/5-senegambia_raices.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/6-vestimenta_raices.jpg);}
+}
+@keyframes raices{
+    0%,100%,15%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/1-ciudadkano_raices.jpg);}
+    16%,32%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/2-kingdom_of_loango_raices.jpg);}
+    33%,47%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/3-senegal_raices.jpg);}
+    48%,63%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/4-guinea_raices.jpg);}
+    64%,79%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/5-senegambia_raices.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/selva/raices/6-vestimenta_raices.jpg);}
+}
+
+/*****************************************/
+/*********** Mecanismos ******************/
+/*****************************************/
+@-webkit-keyframes mecanismos{
+    0%,100%,13%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/1-comercio_mecanismoslegales.jpg);}
+    14%,27%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/2-comprando_mecanismos.jpg);}
+    28%,41%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/3-mercadoesclavos_mecanismoslegales.jpeg);}
+    42%,55%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/4-plantaciones.jpg);}
+    56%,77%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/5-trabajofuerza.gif);}
+    70%,83%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/6-trabajo_mecanismoslegales.jpg);}
+    84%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/7-venta_mecanismoslegales.png);}
+}
+@-moz-keyframes mecanismos{
+    0%,100%,13%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/1-comercio_mecanismoslegales.jpg);}
+    14%,27%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/2-comprando_mecanismos.jpg);}
+    28%,41%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/3-mercadoesclavos_mecanismoslegales.jpeg);}
+    42%,55%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/4-plantaciones.jpg);}
+    56%,77%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/5-trabajofuerza.gif);}
+    70%,83%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/6-trabajo_mecanismoslegales.jpg);}
+    84%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/7-venta_mecanismoslegales.png);}
+}
+@keyframes mecanismos{
+    0%,100%,13%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/1-comercio_mecanismoslegales.jpg);}
+    14%,27%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/2-comprando_mecanismos.jpg);}
+    28%,41%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/3-mercadoesclavos_mecanismoslegales.jpeg);}
+    42%,55%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/4-plantaciones.jpg);}
+    56%,77%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/5-trabajofuerza.gif);}
+    70%,83%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/6-trabajo_mecanismoslegales.jpg);}
+    84%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/mecanismos_legales/7-venta_mecanismoslegales.png);}
+}
+
+/*****************************************/
+/*********** Nuevo ***********************/
+/*****************************************/
+@-webkit-keyframes nuevo{
+    0%,100%,15%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/1-esclavas_nuevomundo.jpg);}
+    16%,31%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/2-esclavos_nuevomundo.JPG);}
+    32%,47%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/3-llegando_nuevomundo.jpg);}
+    48%,61%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/4-mapa_nuevomundo.jpg);}
+    62%,77%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/5-plazaeclavos_nuevomundo.jpg);}
+    78%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/6-trabajo_nuevomundo.jpg);}
+}
+@-moz-keyframes nuevo{
+    0%,100%,15%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/1-esclavas_nuevomundo.jpg);}
+    16%,31%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/2-esclavos_nuevomundo.JPG);}
+    32%,47%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/3-llegando_nuevomundo.jpg);}
+    48%,61%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/4-mapa_nuevomundo.jpg);}
+    62%,77%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/5-plazaeclavos_nuevomundo.jpg);}
+    78%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/6-trabajo_nuevomundo.jpg);}
+}
+@keyframes nuevo{
+    0%,100%,15%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/1-esclavas_nuevomundo.jpg);}
+    16%,31%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/2-esclavos_nuevomundo.JPG);}
+    32%,47%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/3-llegando_nuevomundo.jpg);}
+    48%,61%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/4-mapa_nuevomundo.jpg);}
+    62%,77%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/5-plazaeclavos_nuevomundo.jpg);}
+    78%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/nuevo_mundo/6-trabajo_nuevomundo.jpg);}
+}
+
+/*****************************************/
+/*********** Viaje ***********************/
+/*****************************************/
+
+@-webkit-keyframes viaje{
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/1-barco_viaje.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/2-bodega_viaje.jpg);}
+    40%,59%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/3-buque_viaje.jpg);}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/4-hacinamiento_viaje.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/5-mar_viaje.jpg);}
+}
+@-moz-keyframes viaje{
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/1-barco_viaje.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/2-bodega_viaje.jpg);}
+    40%,59%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/3-buque_viaje.jpg);}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/4-hacinamiento_viaje.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/5-mar_viaje.jpg);}
+}
+@keyframes viaje{
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/1-barco_viaje.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/2-bodega_viaje.jpg);}
+    40%,59%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/3-buque_viaje.jpg);}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/4-hacinamiento_viaje.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/viaje/5-mar_viaje.jpg);}
+}
+
+/*****************************************/
+/*********** Violaciones *****************/
+/*****************************************/
+@-webkit-keyframes violaciones{
+    0%,100%,15%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/1-casacastigos_sometimientos.jpg);}
+    16%,31%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/2-castigo1.jpg);}
+    32%,47%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/3-castigo_sometimientos.jpg);}
+    48%,63%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/4-castigotroncos.jpg);}
+    64%,79%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/5-formascastigo_sometimientos.JPG);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/6-vidaeintercambioesclavos_sometimientos.jpg);}
+}
+@-moz-keyframes violaciones{
+    0%,100%,15%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/1-casacastigos_sometimientos.jpg);}
+    16%,31%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/2-castigo1.jpg);}
+    32%,47%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/3-castigo_sometimientos.jpg);}
+    48%,63%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/4-castigotroncos.jpg);}
+    64%,79%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/5-formascastigo_sometimientos.JPG);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/6-vidaeintercambioesclavos_sometimientos.jpg);}
+}
+@keyframes violaciones{
+    0%,100%,15%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/1-casacastigos_sometimientos.jpg);}
+    16%,31%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/2-castigo1.jpg);}
+    32%,47%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/3-castigo_sometimientos.jpg);}
+    48%,63%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/4-castigotroncos.jpg);}
+    64%,79%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/5-formascastigo_sometimientos.JPG);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/pasado/violaciones_sometimientos/6-vidaeintercambioesclavos_sometimientos.jpg);}
+}
+
+/*****************************************/
+/*********** Palenque ********************/
+/*****************************************/
+
+@-webkit-keyframes palenque{
+    0%,100%,24%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/1-benkos.jpg);}
+    25%,49%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/2-grupo_palenques.jpg);}
+    50%,74%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/3-palenque.jpg);}
+    75%,99%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/4-quilombo.jpg);}
+}
+@-moz-keyframes palenque{
+    0%,100%,24%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/1-benkos.jpg);}
+    25%,49%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/2-grupo_palenques.jpg);}
+    50%,74%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/3-palenque.jpg);}
+    75%,99%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/4-quilombo.jpg);}
+}
+@keyframes palenque{
+    0%,100%,24%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/1-benkos.jpg);}
+    25%,49%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/2-grupo_palenques.jpg);}
+    50%,74%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/3-palenque.jpg);}
+    75%,99%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/palenques/4-quilombo.jpg);}
+}
+
+/*****************************************/
+/*********** Mujer ***********************/
+/*****************************************/
+
+@-webkit-keyframes mujer{
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/1-esclavas_muejr.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/2-madre-hijo_mujer.jpg);}
+    40%,59%{background-image: url("/ebookapp/img/ilustraciones/rebeldia/la_mujer/3-madre y sus hijos_mujer.jpg");}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/4-mujeres_esclavas.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/5-nin__os_mujeres.jpg);}
+}
+@-moz-keyframes mujer{
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/1-esclavas_muejr.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/2-madre-hijo_mujer.jpg);}
+    40%,59%{background-image: url("/ebookapp/img/ilustraciones/rebeldia/la_mujer/3-madre y sus hijos_mujer.jpg");}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/4-mujeres_esclavas.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/5-nin__os_mujeres.jpg);}
+}
+@keyframes mujer{
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/1-esclavas_muejr.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/2-madre-hijo_mujer.jpg);}
+    40%,59%{background-image: url("/ebookapp/img/ilustraciones/rebeldia/la_mujer/3-madre y sus hijos_mujer.jpg");}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/4-mujeres_esclavas.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/la_mujer/5-nin__os_mujeres.jpg);}
+}
+
+/*****************************************/
+/*********** Organizacion ****************/
+/*****************************************/
+
+@-webkit-keyframes organizacion{
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/1-cimarrones.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/2-cimarro.JPG);}
+    40%,59%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/3-grupocimarron_org_politica.jpg);}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/4-negrocimarron.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/5-rebelionJamaica_poli__tica.jpg);}
+}
+@-moz-keyframes organizacion{
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/1-cimarrones.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/2-cimarro.JPG);}
+    40%,59%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/3-grupocimarron_org_politica.jpg);}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/4-negrocimarron.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/5-rebelionJamaica_poli__tica.jpg);}
+}
+@keyframes organizacion{
+    0%,100%,19%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/1-cimarrones.jpg);}
+    20%,39%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/2-cimarro.JPG);}
+    40%,59%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/3-grupocimarron_org_politica.jpg);}
+    60%,79%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/4-negrocimarron.jpg);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/rebeldia/organizacion_politica/5-rebelionJamaica_poli__tica.jpg);}
+}
+
+/*****************************************/
+/*********** Danza ***********************/
+/*****************************************/
+
+@-webkit-keyframes danza{
+    0%,100%,49%{background-image: url(/ebookapp/img/ilustraciones/riqueza/danza/1-danzaesclavos.jpg);}
+    50%,99%{background-image: url(/ebookapp/img/ilustraciones/riqueza/danza/2-danzainicios.jpg);}
+}
+@-moz-keyframes danza{
+    0%,100%,49%{background-image: url(/ebookapp/img/ilustraciones/riqueza/danza/1-danzaesclavos.jpg);}
+    50%,99%{background-image: url(/ebookapp/img/ilustraciones/riqueza/danza/2-danzainicios.jpg);}
+}
+@keyframes danza{
+    0%,100%,49%{background-image: url(/ebookapp/img/ilustraciones/riqueza/danza/1-danzaesclavos.jpg);}
+    50%,99%{background-image: url(/ebookapp/img/ilustraciones/riqueza/danza/2-danzainicios.jpg);}
+}
+
+/*****************************************/
+/*********** Musica **********************/
+/*****************************************/
+
+@-webkit-keyframes musica{
+    0%,100%,32%{background-image: url(/ebookapp/img/ilustraciones/riqueza/musica/1-casamusical_musica.jpg);}
+    33%,65%{background-image: url(/ebookapp/img/ilustraciones/riqueza/musica/2-instrumentos_musica.JPG);}
+    66%,99%{background-image: url(/ebookapp/img/ilustraciones/riqueza/musica/4-musicos_mu__sica.jpg);}
+}
+@-moz-keyframes musica{
+    0%,100%,32%{background-image: url(/ebookapp/img/ilustraciones/riqueza/musica/1-casamusical_musica.jpg);}
+    33%,65%{background-image: url(/ebookapp/img/ilustraciones/riqueza/musica/2-instrumentos_musica.JPG);}
+    66%,99%{background-image: url(/ebookapp/img/ilustraciones/riqueza/musica/4-musicos_mu__sica.jpg);}
+}
+@keyframes musica{
+    0%,100%,32%{background-image: url(/ebookapp/img/ilustraciones/riqueza/musica/1-casamusical_musica.jpg);}
+    33%,65%{background-image: url(/ebookapp/img/ilustraciones/riqueza/musica/2-instrumentos_musica.JPG);}
+    66%,99%{background-image: url(/ebookapp/img/ilustraciones/riqueza/musica/4-musicos_mu__sica.jpg);}
+}
+
+/*****************************************/
+/*********** Brujeria **********************/
+/*****************************************/
+
+@-webkit-keyframes brujeria{
+    0%,100%,49%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/brujeria/2-magia2.jpg);}
+    50%,99%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/brujeria/1-magia1.jpg);}
+}
+@-moz-keyframes brujeria{
+    0%,100%,49%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/brujeria/2-magia2.jpg);}
+    50%,99%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/brujeria/1-magia1.jpg);}
+}
+@keyframes brujeria{
+    0%,100%,49%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/brujeria/2-magia2.jpg);}
+    50%,99%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/brujeria/1-magia1.jpg);}
+}
+
+/*****************************************/
+/*********** Ritual **********************/
+/*****************************************/
+
+@-webkit-keyframes ritual{
+    0%,100%,24%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/1-ceremoniafuneral_ritual.jpg);}
+    25%,49%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/2-Funeral2Angola_ritual.jpg);}
+    50%,79%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/3-funeralAngola_ritual.JPG);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/4-funeral_senegambia.JPG);}
+}
+@-moz-keyframes ritual{
+    0%,100%,24%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/1-ceremoniafuneral_ritual.jpg);}
+    25%,49%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/2-Funeral2Angola_ritual.jpg);}
+    50%,79%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/3-funeralAngola_ritual.JPG);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/4-funeral_senegambia.JPG);}
+}
+@keyframes ritual{
+    0%,100%,24%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/1-ceremoniafuneral_ritual.jpg);}
+    25%,49%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/2-Funeral2Angola_ritual.jpg);}
+    50%,79%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/3-funeralAngola_ritual.JPG);}
+    80%,99%{background-image: url(/ebookapp/img/ilustraciones/sabiduria/ritual/4-funeral_senegambia.JPG);}
+}

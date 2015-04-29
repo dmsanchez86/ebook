@@ -2,120 +2,130 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Antorcha Films</title>
+        <title>Antorcha Films - Ebook</title>
         <link rel="stylesheet" href="css/principal.css" />
+        <link rel="stylesheet" href="css/animaciones.css" />
         <link rel="stylesheet" href="http://daneden.github.io/animate.css/animate.min.css" type="text/css" />
         <link rel="stylesheet" href="css/modal.css" type="text/css" />
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
         <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
-        <style type="text/css">
-          .vjs-default-skin .vjs-play-progress,
-          .vjs-default-skin .vjs-volume-level { background-color: #8f3636 }
-          .vjs-default-skin .vjs-control-bar { font-size: 99% }
-        </style>
     </head>
     <body>
+        <!-- Cargador Inicial-->
+        <div class="bgLoader">
+            <div class="loader-icon">
+                <img src="img/loader/cargando.png">
+                <div class="carga"><div></div></div>
+            </div>
+        </div>
+        <!-- Fin Cargador Inicial-->
+            <style>
+                iframe{
+                    max-width:100% !important;
+                    max-height:100% !important;
+                    height: 80%;
+                }
+            </style>
         <!-- Contenedor Principal -->
-        <div class="contenedor">
-            <!-- Modal -->
-             <div class="modal-pop-up" style="display:none">
+        <!-- Modal -->
+            <div class="modal-pop-up" style="display:none">
                <div class="pop-up-header">
-                   <img src="http://icons.iconarchive.com/icons/hopstarter/soft-scraps/256/Button-Close-icon.png" class="closebtn" >
+                   <img src="http://atarrayaitinerante.org/ebookapp/img/menu/inicio/cerrar.png" class="closebtn" >
                </div>
                <div class="pop-up-content">
                    <div class="left-area">
                        <div class="wrap-content">
-                           
-                            <video id="my_video_1" class="video-js vjs-default-skin" 
-                              controls preload="none" width="640px" height="267px" data-setup='{}'
-                              poster='http://video-js.zencoder.com/oceans-clip.jpg'>
-                                <source src="video/mov_bbb.mp4" type='video/mp4' />
-                            </video>
-                                                    
-                           <div class="wrap-controls">
-                               <p>
-                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                               </p>
-                               <div class="btn-group">
-                                  <!-- <i class="fa fa-play"></i>
-                                       <a href="#" class="control-stop btn btn-inverse"><i class="icon-white fa fa-stop"></i></a>
-                                    <a href="#" class="control-play btn btn-inverse"><i class="icon-white fa fa-play"></i></a>
-                                    <a href="#" class="control-pause btn btn-inverse"><i class="icon-white fa fa-pause"></i></a>-->
-                                   <!-- <a href="#" class="control-fast-backward btn btn-inverse"><i class="icon-white fa fa-fast-backward"></i></a>
-                                    <a href="#" class="control-backward btn btn-inverse"><i class="icon-white fa fa-backward"></i></a>
-                                    <a href="#" class="control-stop btn btn-inverse"><i class="icon-white fa fa-stop"></i></a>
-                                    <a href="#" class="control-play btn btn-inverse"><i class="icon-white fa fa-play"></i></a>
-                                    <a href="#" class="control-pause btn btn-inverse"><i class="icon-white fa fa-pause"></i></a>
-                                    <a href="#" class="control-forward btn btn-inverse"><i class="icon-white fa fa-forward"></i></a>
-                                    <a href="#" class="control-fast-forwards btn btn-inverse"><i class="icon-white fa fa-fast-forward"></i></a>-->
-                                </div>
-
-                           </div>
+                            <div class="contenido"></div>
                        </div>
                    </div>
                    <div class="right-area">
                        <div class="container list-video">
-                            <ul class="list-unstyled video-list-thumbs row">
-                            	<li class="col-lg-3 col-sm-4 col-xs-6 item-list-video" data-poster="http://static.ddmcdn.com/gif/storymaker-best-hubble-space-telescope-images-20092-514x268.jpg" data-src="video/mov_bbb.mp4">
-                            		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                            			<video class="video" width="100%"  height="130px" >
-                                          <source src="video/mov_bbb.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                                        <span class="play-circle fa fa-play-circle-o"></span>
-                            			<span class="duration">03:15</span>
-                            		</a>
-                            	</li>
-                            	<li class="col-lg-3 col-sm-4 col-xs-6 item-list-video"  data-poster="http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg" data-src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4">
-                            		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                            			<video class="video" width="100%"  height="130px">
-                                          <source src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                            			<span class="play-circle fa fa-play-circle-o"></span>
-                            			<span class="duration">03:15</span>
-                            		</a>
-                            	</li>
-                            	<li class="col-lg-3 col-sm-4 col-xs-6 item-list-video"  data-poster="http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg" data-src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4">
-                            		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                            			<video class="video" width="100%"  height="130px">
-                                          <source src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                            			<span class="play-circle fa fa-play-circle-o"></span>
-                            			<span class="duration">03:15</span>
-                            		</a>
-                            	</li>
-                            	<li class="col-lg-3 col-sm-4 col-xs-6 item-list-video"  data-poster="http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg" data-src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4">
-                            		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                            			<video class="video" width="100%"  height="130px">
-                                          <source src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                            			<span class="play-circle fa fa-play-circle-o"></span>
-                            			<span class="duration">03:15</span>
-                            		</a>
-                            	</li>
-                            	<li class="col-lg-3 col-sm-4 col-xs-6 item-list-video"  data-poster="http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg" data-src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4">
-                            		<a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                            			<video class="video" width="100%"  height="130px">
-                                          <source src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                            			<span class="play-circle fa fa-play-circle-o"></span>
-                            			<span class="duration">03:15</span>
-                            		</a>
-                            	</li>
-                           </ul>   
+                            <ul class="list-unstyled ilustraciones-list video-list-thumbs row"></ul>   
                         </div>
                    </div>
                </div>
             </div>
             <!-- Fin Modal -->
+        <div class="contenedor">
+            
+            
+            <!-- Audio Animación-->
+            <audio id="selvaAudio" src="assets/selva4.mp3" ></audio>
+            <!-- Fin Audio Animación-->
+            
             <!-- Cuadro invisible para dar click en el inicio -->
             <div class="inicio"></div>
             <!-- Fin cuadro Invisible -->
+            
+            <!-- Cuadro para saltar la animacion -->
+            <div class="skip">Saltar Viaje</div>
+            <!-- Fin Cuadro para saltar la animacion -->
+            
+            <!-- Cuadro Indice de las secuencias -->
+            <div class="indice_derecha">
+                <span>Secuencia</span>
+                <div top="600" >1 y 2</div>
+                <div top="1200" >3 y 4</div>
+                <div top="1800" >5 y 6</div>
+                <div top="2400" >7 y 8</div>
+                <div top="3000" >9 y 10</div>
+                <div top="3600">11 y 12</div>
+                <div top="4200" >13 y 14</div>
+                <div top="4800" >15 y 16</div>
+                <div top="5400" >17 y 18</div>
+                <div top="6000" >19 y 20</div>
+                <div top="6600" >21 y 22</div>
+                <div top="7200" >23 y 24</div>
+                <div top="7800" >25 y 26</div>
+            </div>
+            <!-- Fin Cuadro Indice de las secuencias -->
+            
+            <!-- Cuadro Indice de las secuencias -->
+            <div class="indice_izquierda">
+                <span>Menu</span>
+                <div top="600" >Selva y Territorialida</div>
+                <div top="1200" >Pasado Violento</div>
+                <div top="1800" >Rebeldía y Resistencia</div>
+                <div top="2400" >Sabiduría Ancestral</div>
+                <div top="3000" >Riqueza Cultural</div>
+            </div>
+            <!-- Fin Cuadro Indice de las secuencias -->
+            
+            <!-- Menu Inicio-->
+            <div class="menuinicio">
+                <a >
+                    <div id="modalDialog1" class="encuentrodealmas"></div>
+                </a>
+                <a >
+                    <div id="modalDialog2" class="bibliografia"></div>
+                </a>
+                <a >
+                    <div id="modalDialog3" class="creditos"></div>
+                </a>
+            </div>
+            <!-- Fin Menu Inicio-->
+            
+            <!-- Modales del menu del inicio -->
+            <div id="openModal1" class="modalDialog1">
+                <div>
+                    <a class="close"></a>
+                    <div class="encuentro"></div>
+                </div>
+            </div>
+            <div id="openModal2" class="modalDialog2">
+                <div>
+                    <a class="close"></a>
+                    <div class="encuentro"></div>
+                </div>
+            </div>
+            <div id="openModal3" class="modalDialog3">
+                <div>
+                    <a class="close"></a>
+                    <div class="encuentro"></div>
+                </div>
+            </div>
+            <!-- Fin Modales del menu del inicio -->
+            
             <!-- Contenedor izquierda-->
             <div class="contenedor_izquierda">
                 <!-- tira izquierda -->
@@ -126,13 +136,16 @@
                     <div class="block intro_izquierda_3"></div>
                     <div class="block intro_izquierda_4"></div>
                     <div class="block intro_izquierda_5"></div>
-                    <div class="block menu_izquierda"></div>
-                    <div class="block selva" data-entries="{subtitles:[{title:'su madre',content:'path'},{title:'su madre',content:'path'},{title:'su madre',content:'path'}]}" id="selva" top="600" paginas="1,2,3">
+                    <div class="block menu_izquierda" data-scroll="l">
+                        <div class="inicio_menu"></div>
+                    </div>
+                    <div class="block selva menu" id="selva" top="600" paginas="1,2,3" activosub="asentamientos" activotexto="1" titulos="asentamientos,ecosistemas,extraccion" activotitulo="0" textos="1,2,3,4-1-1">
                         <div class="superior" onclick="alloc(this.parentNode)"></div>
                         <div class="inferior"></div>
                         <div class="guion" actual="1">
                             <div class="titulo"></div>
                             <div class="texto"></div>
+                            <div class="cerrar"></div>
                         </div>
                         <div class="paginacion">
                             <div class="left"></div>
@@ -140,54 +153,97 @@
                         </div>
                         <div class="material">
                             <h2>Material Interactivo</h2>
+                            <div class="material_interactivo">
+                                <div class="item section-item asentamiento" data-content='[{"url":"img/ilustraciones/selva/asentamientos/1-africaoccidental_senegambia.jpg","texto":"Aldea de Fulani África Occidental, 1809 Michel Etienne  Descourtiz , Voyage  d un naturaliste."},{"url":"img/ilustraciones/selva/asentamientos/2-senegambia.jpg","texto":"Parte  de África Nor Occidental (Título original: Carte de la Barbarie de la Nigritie et de La Guinee"},{"url":"img/ilustraciones/selva/asentamientos/3-congomapa.png","texto":"Mapa del reino del Congo de 1617"},{"url":"img/ilustraciones/selva/asentamientos/4-europeos_senegambia.jpg","texto":"Europeos llegando a la costa africana, S. XVIII Louis Freret (Paris, 1795). "},{"url":"img/ilustraciones/selva/asentamientos/5-explotacio__n_senegambia.jpg","texto":"Assault on the Fort of Dina"},{"url":"img/ilustraciones/selva/asentamientos/6-hombres_senegambia.jpg","texto":"Talibe in war dress (Senegambia)"},{"url":"img/ilustraciones/selva/asentamientos/7-mujeres_senegambia.jpg","texto":"Women of Elmina"},{"url":"img/ilustraciones/selva/asentamientos/8-soldados_senegambia.jpg","texto":"Jinetes africanos y soldados a pie, Senegambia 1818, Gaspar T Mollien, Viaje al interior de África a las fuentes de Senegal y Gambia. "},{"url":"img/ilustraciones/selva/asentamientos/9-territorio_senegambia.jpg","texto":"West African types"},{"url":"img/ilustraciones/selva/asentamientos/10-vida_senegambia.jpg","texto":"vestimentas, Gold Coast  finales S.XVII , descripción de África (Amsterdam 1686)."}]'><div>ASENTAMIENTO</div></div>
+                                <div class="item section-item ecosistema" data-content='[{"url":"img/ilustraciones/selva/ecosistema/1-houseconstruction_ecosistema.jpg","texto":"Construcción de casa y techo, Sierra Leona, 1856,  The Illustrated London News (Oct 25 1856)."},{"url":"img/ilustraciones/selva/ecosistema/2-aldeaSierraleona_ecosistema.jpg","texto":"Casas y aldea, Sierra Leona, 1856,The illustrated London News."},{"url":"img/ilustraciones/selva/ecosistema/3-atardecer_ecosistema.jpg","texto":"El Charco, Nariño "},{"url":"img/ilustraciones/selva/ecosistema/4-casasierraleona_ecosistema.jpg","texto":"Interior casa, Sierra Leona, 1856,  The Illustrated London News, (Oct 25 1856)."},{"url":"img/ilustraciones/selva/ecosistema/5-cocina_ecosistema.jpg","texto":"Exterior de cocina, Sierra Leona, 1856, The Illustrated London News (Oct 25 1856). "},{"url":"img/ilustraciones/selva/ecosistema/6-mercado_ecosistema.jpg","texto":"Mercado y casas, Sierra Leona, 1856, The Illustrated London News (Oct 25 1856)."},{"url":"img/ilustraciones/selva/ecosistema/7-vivienda_ecosistema.jpg","texto":"Bahía Málaga "}]'><div>ECOSISTEMA Y SABERES</div></div>
+                                <div class="item section-item extraccion" data-content='[{"url":"img/ilustraciones/selva/extraccion/1-alimento.jpg","texto":"Los Estudios Sobre los Negros (Black Studies) y Sobre la Manumisión de los Esclavos en Nuestra América."},{"url":"img/ilustraciones/selva/extraccion/2-cuadrillaesclavos.jpg","texto":"Reunión de Barequeros. Acuarela de Pedro Nel Gómez, 1945. 51 x 74 cm. Casa Museo Pedro Nel Gómez, Medellín"},{"url":"img/ilustraciones/selva/extraccion/3-extraccion.jpg","texto":""},{"url":"img/ilustraciones/selva/extraccion/4-mina_extraccionrecursos.jpg","texto":"Grabado sobre dibujo de Emile Bayard. Charles Saffray, VoyageàlaNouvelleGrénade, París: La Tour du Monde, 1872. Biblioteca Luis Angel Arango, Bogotá."},{"url":"img/ilustraciones/selva/extraccion/5-mineria_extraccionrecursos.jpg","texto":"Proceso artesanal para obtener oro y platino."}]'><div>EXTRACCION DE RECURSO</div></div>
+                                <div class="item section-item raices" data-content='[{"url":"img/ilustraciones/selva/raices/1-ciudadkano_raices.jpg","texto":"Ciudad de Kano, Nigeria del Norte, 1850, Harpers Weekly (sept, 5, 1857). "},{"url":"img/ilustraciones/selva/raices/2-kingdom_of_loango_raices.jpg","texto":"Estilos vestimenta, Reino de Loango, finales S.XVII, descripción de África ( Amsterdam, 1686)."},{"url":"img/ilustraciones/selva/raices/3-senegal_raices.jpg","texto":"Estilos vestimenta, Senegal, 1806, Jean Baptiste Durand, A voyage to Senegal. "},{"url":"img/ilustraciones/selva/raices/4-guinea_raices.jpg","texto":"Corte del Rey Sestro, 1618, John Babort, “description of the coasts of north and Routh guinea( london 1732)."},{"url":"img/ilustraciones/selva/raices/5-senegambia_raices.jpg","texto":"Estilos vestimenta, Senegambia, finales S.XVII, Descripción de África. "},{"url":"img/ilustraciones/selva/raices/6-vestimenta_raices.jpg","texto":"Female Clothing, Angola, 1786 Louis de Grandpe. "}]'><div>RAICES</div></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="block pasado" id="pasado" top="1200">
+                    <div class="block pasado menu" id="pasado" top="1200" activosub="constitucion" activotexto="1" titulos="constitucion,inmersion,viaje,violaciones,raices" activotitulo="0" textos="1,2,3-1,2-1,2-1,2,3,4,5,6-1">
                        <div class="superior" onclick="alloc(this.parentNode)"></div>
                         <div class="inferior"></div>
-                        <div class="guion"></div>
+                        <div class="guion" actual="1">
+                            <div class="titulo"></div>
+                            <div class="texto"></div>
+                            <div class="cerrar"></div>
+                        </div>
                         <div class="paginacion">
                             <div class="left"></div>
                             <div class="right"></div>
                         </div>
                         <div class="material">
                             <h2>Material Interactivo</h2>
+                            <div class="material_interactivo">
+                                <div class="item section-item mecanismos" data-content='[{"url":"img/ilustraciones/pasado/mecanismos_legales/1-comercio_mecanismoslegales.jpg","texto":""},{"url":"img/ilustraciones/pasado/mecanismos_legales/2-comprando_mecanismos.jpg","texto":""},{"url":"img/ilustraciones/pasado/mecanismos_legales/3-mercadoesclavos_mecanismoslegales.jpeg","texto":""},{"url":"img/ilustraciones/pasado/mecanismos_legales/4-plantaciones.jpg","texto":"Crédito: Wellcome Library, Londres, Plate III, Esclavos en el trabajo Haití, 1836."},{"url":"img/ilustraciones/pasado/mecanismos_legales/5-trabajofuerza.gif","texto":""},{"url":"img/ilustraciones/pasado/mecanismos_legales/6-trabajo_mecanismoslegales.jpg","texto":"En el Porfiriato, las haciendas alcanzaron su apogeo."},{"url":"img/ilustraciones/pasado/mecanismos_legales/7-venta_mecanismoslegales.png","texto":""}]'><div>MECANISMOS LEGALES</div></div>
+                                <div class="item section-item nuevo" data-content='[{"url":"img/ilustraciones/pasado/nuevo_mundo/1-esclavas_nuevomundo.jpg","texto":"Esclava cocinera alimentando a los niños esclavos. "},{"url":"img/ilustraciones/pasado/nuevo_mundo/2-esclavos_nuevomundo.JPG","texto":"Cadena de Esclavos , Sudán Occidental ,  1879"},{"url":"img/ilustraciones/pasado/nuevo_mundo/3-llegando_nuevomundo.jpg","texto":"Crédito: Wellcome Library, Londres  En la noche y en la lluvia de la selva Grupo de esclavos cargado equipo y suplementos durante una tormenta en la noche. J. D Cooper . "},{"url":"img/ilustraciones/pasado/nuevo_mundo/4-mapa_nuevomundo.jpg","texto":"Wellcome Library, Londres “ Mapa del mundo incluyendo los nuevos descubrimientos en ambos hemisferios”.  1782 "},{"url":"img/ilustraciones/pasado/nuevo_mundo/5-plazaeclavos_nuevomundo.jpg","texto":"Crédito: Wellcome Library, Londres,  “Mercado de Esclavos en el Cairo”, 1860. Por: Owen Browne Carter, Después: H. Warren and J.C. Bourne."},{"url":"img/ilustraciones/pasado/nuevo_mundo/6-trabajo_nuevomundo.jpg","texto":"Crédito: Wellcome Library, Londres,  “Esclavos en camino al trabajo” 1839 , Voyage à Surinam. P. J. Benoit."}]'><div>NUEVO MUNDO</div></div>
+                                <div class="item section-item viaje" data-content='[{"url":"img/ilustraciones/pasado/viaje/1-barco_viaje.jpg","texto":"Cubierta  de esclavos de Bark Wildfire. "},{"url":"img/ilustraciones/pasado/viaje/2-bodega_viaje.jpg","texto":""},{"url":"img/ilustraciones/pasado/viaje/3-buque_viaje.jpg","texto":"Bodega de un buque negrero, capturado recientemente en las aguas de Zanzíbar. "},{"url":"img/ilustraciones/pasado/viaje/4-hacinamiento_viaje.jpg","texto":"Esclavos  puestos en grilletes en el barco. Ilustración: Swain. "},{"url":"img/ilustraciones/pasado/viaje/5-mar_viaje.jpg","texto":""}]'><div>VIAJE</div></div>
+                                <div class="item section-item violaciones" data-content='[{"url":"img/ilustraciones/pasado/violaciones_sometimientos/1-casacastigos_sometimientos.jpg","texto":"Vista interior de casa de corrección en Jamaica, 1834."},{"url":"img/ilustraciones/pasado/violaciones_sometimientos/2-castigo1.jpg","texto":" Castigo cuatro estacas, 1849"},{"url":"img/ilustraciones/pasado/violaciones_sometimientos/3-castigo_sometimientos.jpg","texto":"Supervisor plantación  castiga a un esclavo en Brasil. 1834."},{"url":"img/ilustraciones/pasado/violaciones_sometimientos/4-castigotroncos.jpg","texto":"Negros en Tronco. 1830."},{"url":"img/ilustraciones/pasado/violaciones_sometimientos/5-formascastigo_sometimientos.JPG","texto":"Modos castigo de esclavos"},{"url":"img/ilustraciones/pasado/violaciones_sometimientos/6-vidaeintercambioesclavos_sometimientos.jpg","texto":"Escenas de África Occidental: vida e intercambio de esclavos con europeos. 1698."}]'><div>VIOLACIONES SOMETIMIENTO</div></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="block rebeldia" id="huida" top="1800">
+                    <div class="block rebeldia menu" id="huida" top="1800" activosub="acciones" activotexto="1" titulos="acciones,adaptacion,mujer,organizacion,palenques,vivienda" activotitulo="0" textos="1,2,3-1,2-1,2,3-1,2,3-1,2,3,4,5,6,7-1,2">
                        <div class="superior" onclick="alloc(this.parentNode)"></div>
                         <div class="inferior"></div>
-                        <div class="guion"></div>
+                        <div class="guion" actual="1">
+                            <div class="titulo"></div>
+                            <div class="texto"></div>
+                            <div class="cerrar"></div>
+                        </div>
                         <div class="paginacion">
                             <div class="left"></div>
                             <div class="right"></div>
                         </div>
                         <div class="material">
                             <h2>Material Interactivo</h2>
+                            <div class="material_interactivo">
+                                <div class="item section-item palenque" data-content='[{"url":"img/ilustraciones/rebeldia/palenques/1-benkos.jpg","texto":""},{"url":"img/ilustraciones/rebeldia/palenques/2-grupo_palenques.jpg","texto":""},{"url":"img/ilustraciones/rebeldia/palenques/3-palenque.jpg","texto":"se reconoce al pueblo de San Basilio como pueblo libre mediante el acuerdo “ Etente Cordiale”"},{"url":"img/ilustraciones/rebeldia/palenques/4-quilombo.jpg","texto":""}]'><div>PALENQUE</div></div>
+                                <div class="item section-item mujer" data-content='[{"url":"img/ilustraciones/rebeldia/la_mujer/1-esclavas_muejr.jpg","texto":""},{"url":"img/ilustraciones/rebeldia/la_mujer/2-madre-hijo_mujer.jpg","texto":"Madre siendo separada de su bebé . 1862.  Esclavitud en Carolina del Sur  y  ex- esclavos . The port Royal . Austina Malinda. "},{"url":"img/ilustraciones/rebeldia/la_mujer/3-madre y sus hijos_mujer.jpg","texto":"Mujer suplicando por el regreso de sus dos pequeños hijos.  1862.  Esclavitud en Carolina del Sur  y  ex- esclavos . The port Royal . Austina Malinda."},{"url":"img/ilustraciones/rebeldia/la_mujer/4-mujeres_esclavas.jpg","texto":"Mujeres esclavas cultivando, África central, 1858, David y Charles Livingstone, Londres 1865."},{"url":"img/ilustraciones/rebeldia/la_mujer/5-nin__os_mujeres.jpg","texto":""}]'><div>LA MUJER</div></div>
+                                <div class="item section-item organizacion" data-content='[{"url":"img/ilustraciones/rebeldia/organizacion_politica/1-cimarrones.jpg","texto":"Lucha entre cimarrones y esclavistas."},{"url":"img/ilustraciones/rebeldia/organizacion_politica/2-cimarro.JPG","texto":"Negro Cimarrón."},{"url":"img/ilustraciones/rebeldia/organizacion_politica/3-grupocimarron_org_politica.jpg","texto":"Esclavos cimarrones en campamento al lado del río, Harper’s Weekly  1860."},{"url":"img/ilustraciones/rebeldia/organizacion_politica/4-negrocimarron.jpg","texto":"negro cimarrón "},{"url":"img/ilustraciones/rebeldia/organizacion_politica/5-rebelionJamaica_poli__tica.jpg","texto":"Revuelta de esclavos en Jamaica, 1795, David Francois."}]'><div>ORGANIZACION POLITICA</div></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="block sabiduria" id="sabiduria" top="2400">
+                    <div class="block sabiduria menu" id="sabiduria" top="2400" activosub="botanica" activotexto="1" titulos="botanica,brujeria,creencias" activotitulo="0" textos="1,2,3,4,5-1,2,3-1,2">
                        <div class="superior" onclick="alloc(this.parentNode)"></div>
                         <div class="inferior"></div>
-                        <div class="guion"></div>
+                        <div class="guion" actual="1">
+                            <div class="titulo"></div>
+                            <div class="texto"></div>
+                            <div class="cerrar"></div>
+                        </div>
                         <div class="paginacion">
                             <div class="left"></div>
                             <div class="right"></div>
                         </div>
                         <div class="material">
                             <h2>Material Interactivo</h2>
+                            <div class="material_interactivo">
+                                <div class="item section-item danza" data-content='[{"url":"img/ilustraciones/riqueza/danza/1-danzaesclavos.jpg","texto":"Bamboula y Calinda, danza de los esclavos."},{"url":"img/ilustraciones/riqueza/danza/2-danzainicios.jpg","texto":"Wellcome Library, Londres, WITCHCRAFT: Macbeth viendo tres brujas.  Reynolds c. 1786."}]'><div>DANZA</div></div>
+                                <div class="item section-item musica" data-content='[{"url":"img/ilustraciones/riqueza/musica/1-casamusical_musica.jpg","texto":"Casas e instrumentos musicales, Senegal, S. XVIII, M de la Harpe, Abrege de l historie generale, des voyages (Paris, 1780)."},{"url":"img/ilustraciones/riqueza/musica/2-instrumentos_musica.JPG","texto":"“Mujeres con vasijas de agua escuchando la música de la Marimba, Sansa y Pan’s  Pipes” Músicos y sus instrumentos, África Central, 1858. "},{"url":"img/ilustraciones/riqueza/musica/3-instrumentos_mu__sica.JPG","texto":"Griot( narrador de historias) e instrumentos musicales, Sierra Leona, 1820, Alexander Gordon Laing. Travels in the Timanee, Kooranko and Soolima Countries."},{"url":"img/ilustraciones/riqueza/musica/4-musicos_mu__sica.jpg","texto":"Músicos e instrumentos musicales, Sierra Leona, inicios 1820, Alexander Gordon Laing. (Londres, 1825)."}]'><div>MUSICA</div></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="block riqueza" id="riqueza" top="3000">
+                    <div class="block riqueza menu" id="riqueza" top="3000" activosub="choque" activotexto="1" titulos="choque,danza,musica,ritual" activotitulo="0" textos="1,2,3-1-1,2-1,2,3,4,5,6,7,8">
                        <div class="superior" onclick="alloc(this.parentNode)"></div>
                         <div class="inferior"></div>
-                        <div class="guion"></div>
+                        <div class="guion" actual="1">
+                            <div class="titulo"></div>
+                            <div class="texto"></div>
+                            <div class="cerrar"></div>
+                        </div>
                         <div class="paginacion">
                             <div class="left"></div>
                             <div class="right"></div>
                         </div>
                         <div class="material">
                             <h2>Material Interactivo</h2>
+                            <div class="material_interactivo">
+                                <!--<div class="item section-item creencias" data-content=''><div>CREENCIAS RELIGIOSAS</div></div>-->
+                                <div class="item section-item brujeria" data-content='[{"url":"img/ilustraciones/sabiduria/brujeria/1-magia1.jpg","texto":"Wellcome Library, Londres, Brujería y magia: un hombre realizando ritos mágicos, demonios y la aparición de espíritus y un cazador muerto del susto. "},{"url":"img/ilustraciones/sabiduria/brujeria/2-magia2.jpg","texto":"Wellcome Library, Londres, WITCHCRAFT: Macbeth viendo tres brujas.  Reynolds c. 1786."}]'><div>BRUJERIA</div></div>
+                                <div class="item section-item botanica" data-content='[{"url":"img/ilustraciones/sabiduria/botanica_y_saber_medicinal/1-medicina.jpg","texto":"Wellcome Library, Londres,  Curandero succionando el mal de la brujería. 1931. "}]'><div>BOTANICA Y SABER MEDICINAL</div></div>
+                                <div class="item section-item ritual" data-content='[{"url":"img/ilustraciones/sabiduria/ritual/1-ceremoniafuneral_ritual.jpg","texto":"Ceremonia Funeral, Costa de Oro, Edward Cavendish Drake “ A new universal Collection of authentic and entertaining  voyages and travels”, Londres, 1710. "},{"url":"img/ilustraciones/sabiduria/ritual/2-Funeral2Angola_ritual.jpg","texto":"Funeral Angola , 1786- 87, Louis de Grandpre, Viaje a la Costa occidental de África. (Paris, 1801). "},{"url":"img/ilustraciones/sabiduria/ritual/3-funeralAngola_ritual.JPG","texto":"Funeral Angola , 1786, Louis de Grandpre, Viaje a la Costa occidental de África. (Paris, 1801). "},{"url":"img/ilustraciones/sabiduria/ritual/4-funeral_senegambia.JPG","texto":"Funeral, Senegambia, Finales S.XVII, descripción de África (Amsterdam, 1686)."}]'><div>RITUAL</div></div>
+                            </div>
                         </div>
                     </div>
                     <!-- Fin Intro derecha  -->
@@ -195,12 +251,15 @@
                 <!-- fin tira izquierda -->
             </div>
             <!-- fin Contenedor izquierda -->
+            
             <!-- Contenedor derecha -->
             <div class="contenedor_derecha">
                 <!-- tira derecha -->
                 <div class="tira_derecha">
                     <!-- Intro izquierda  -->
-                    <div class="block menu_derecha"></div>
+                    <div class="block menu_derecha" data-scroll="r">
+                        <div class="inicio_menu"></div>
+                    </div>
                     <div class="block intro_derecha_5"></div>
                     <div class="block intro_derecha_4"></div>
                     <div class="block intro_derecha_3"></div>
@@ -208,7 +267,16 @@
                     <div class="block intro_derecha_1"></div>
                      <!-- Fin Intro izquierda  -->
                      <!-- Secuencias (26)  -->
-                    <div class="block secuencia" orden="1">
+                    <div class="block secuencia" orden="1" activo-menu="">
+
+                        <div class="area_squareup">
+                            <img src="img/animacion_secuencias/seqence1.gif">
+                        </div>  
+                        
+                         <div class="area_squaredown">
+                            <img src="img/animacion_secuencias/seqence2.gif">
+                        </div>
+
                         <div class="barra_izquierda" >
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -217,22 +285,33 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Detrás de Cámaras" data-content1='[{"url":"ZbpyBrvI-N0","texto":"video"},{"url":"ks9-jHSWLE4","texto":"video"},{"url":"6t7a2-RlYDE","texto":"video"},{"url":"dfPR5Pq6jyo","texto":"video"}]' data-content2='[{"url":"59hkHcfPH9M","texto":"video"}]'class='item'></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='[{"url":"E3H3HYPvFgs","texto":"Video"},{"url":"uW9z-jgs5J0","texto":"Video"},{"url":"z1bnMfeJAko","texto":"Video"},{"url":"n__2BeGIv-0","texto":"Video"},{"url":"240uVZJfezo","texto":"Video"},{"url":"HzfKKmxdQ38","texto":"Video"},{"url":"Xle9twIRiOE","texto":"Video"}]' data-content2='[{"url":"eBN_7BnjFz0","texto":"Video"},{"url":"wPsVQkGcoHU","texto":"Video"},{"url":"gODtZdQBEwI","texto":"Video"},{"url":"jjl6EVVGu7I","texto":"Video"}
+]'></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1='[{"url":"img/sonido/1/S-2_1T005.WAV","texto":"video"},{"url":"img/sonido/1/S-2_2T005.WAV","texto":"video"},{"url":"img/sonido/1/S-2_5T001.WAV","texto":"video"}]' data-content2='[{"url":"img/sonido/2/S-3_1T011.WAV","texto":"video"},{"url":"img/sonido/2/S-3A_1T002.WAV","texto":"video"}]' ></div>
+                            <div class="imagenes section-item-foto" title="Imágenes" data-content1='[{"url":"img/fotos/1/_MG_3475.JPG","texto":"Samir y Elias de niños preparándose para entrar a escena "},{"url":"img/fotos/1/_MG_3607.JPG","texto":"Elias descubriendo el cementerio de niños "},{"url":"img/fotos/1/_MG_3632.JPG","texto":"Huyendo en medio de la selva"},{"url":"img/fotos/1/_MG_3671.JPG","texto":""},{"url":"img/fotos/1/_MG_3680.JPG","texto":""},{"url":"img/fotos/1/_MG_3780.JPG","texto":"Nuestro equipo de cámara (steady) y sonido ensayando el recorrido con los actores."},{"url":"img/fotos/1/_MG_3783.JPG","texto":"Nuestros actores repasando la partitura de acciones."},{"url":"img/fotos/1/_MG_4783.JPG","texto":"Todo el equipo después de lograr la secuencia"},{"url":"img/fotos/1/_MG_4805.JPG","texto":"Uno de los actores de la fosa después de haber sido maquillado"},{"url":"img/fotos/1/_MG_4809.JPG","texto":"Julian, asistente de dirección en espera de instrucciones para comenzar la escena"},{"url":"img/fotos/1/_MG_4821.JPG","texto":"Departamento de arte y actores componiendo la escena"},{"url":"img/fotos/1/_MG_4826.JPG","texto":"Nuestras bellas actrices descubriendo el set"},{"url":"img/fotos/1/_MG_4846.JPG","texto":"Fosa de niños muertos"},{"url":"img/fotos/1/_MG_4891.JPG","texto":"Ya terminó la escena y todos al rio"},{"url":"img/fotos/1/_MG_5221.JPG","texto":"Fabian Ocampo, nuestro asistente de stady cam listo para iniciar escena"},{"url":"img/fotos/1/_MG_5368.JPG","texto":""},{"url":"img/fotos/1/_MG_5807.JPG","texto":"Karol pico,  nuestra segunda asistente de dirección y script revisando la secuencia a rodar."}]' data-content2='[{"url":"img/fotos/2/_MG_0010N.JPG","texto":"Julian Laguna Primer Asistente de dirección preparando a los actores"},{"url":"img/fotos/2/_MG_0111.JPG","texto":"La abuela y su nieta dirigiéndose al set"},{"url":"img/fotos/2/_MG_0115.JPG","texto":"Elias camino a la sala de cuidados intensivos"},{"url":"img/fotos/2/_MG_0125N.JPG","texto":"La abuela"},{"url":"img/fotos/2/_MG_0249N.JPG","texto":"Miller, sonidista preparándose para la escena"},{"url":"img/fotos/2/_MG_0259N.JPG","texto":"Harold, asistente de producción apoyando a la producción del set."},{"url":"img/fotos/2/_MG_9082.JPG","texto":"Secuencia Elias y la campesina"},{"url":"img/fotos/2/_MG_9210.JPG","texto":"Secuencia Elias y la campesina"},{"url":"img/fotos/2/_MG_9216.JPG","texto":"Secuencia Elias y la campesina"},{"url":"img/fotos/2/_MG_9476N.JPG","texto":"Equipo y extras en preparación de la escena"},{"url":"img/fotos/2/_MG_9495N.JPG","texto":"Equipo y extras en preparación de la escena"},{"url":"img/fotos/2/_MG_9700N.JPG","texto":"El director preparando a su actriz justo antes de la escena"},{"url":"img/fotos/2/_MG_9720N.JPG","texto":"El director preparando a su actriz justo antes de la escena"},{"url":"img/fotos/2/_MG_9801.JPG","texto":"Secuencia Bentú y la abuela desfalleciendo"},{"url":"img/fotos/2/_MG_9806.JPG","texto":"Secuencia Bentú y la abuela desfalleciendo"},{"url":"img/fotos/2/_MG_9905.JPG","texto":"Secuencia Bentú y la abuela desfalleciendo"},{"url":"img/fotos/2/_MG_9967N.JPG","texto":"El director preparando a su actriz justo antes de la escena"}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='[{"url":"img/storyboard/1/Pag_01.jpg","texto":""},{"url":"img/storyboard/1/Pag_02.jpg","texto":""},{"url":"img/storyboard/1/Pag_03.jpg","texto":""},{"url":"img/storyboard/1/Pag_04.jpg","texto":""},{"url":"img/storyboard/1/Pag_05.jpg","texto":""},{"url":"img/storyboard/1/Pag_06.jpg","texto":""},{"url":"img/storyboard/1/Pag_07.jpg","texto":""},{"url":"img/storyboard/1/Pag_08.jpg","texto":""}]' data-content2='null'></div>
                         </div>
-                        <div class="parte1" paginas="1" carpeta="1" palabras-claves="['selva','pasado','huida']"></div>
-                        <div class="parte2" paginas="1,2" carpeta="2" palabras-clave="['sabiduria','riqueza']"></div>
-                        <div class="texto"></div>
+                        <div class="parte1" paginas="1" carpeta="1" palabras-claves="['selva','pasado','huida']" nombre="parte1"></div>
+                        <div class="parte2" paginas="1,2" carpeta="2" palabras-claves="['sabiduria','riqueza']" nombre="parte2"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="2">
+                    <div class="block secuencia" orden="2" activo-menu="">
+                        
+                       <!-- <img src="img/menu/secuencia/3-1.png" class="fix_background">-->
+                            <div class="area_squareup" style="z-index:4">
+                                <img src="img/animacion_secuencias/seqence3.gif">
+                            </div>  
+                        
+                        
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -241,22 +320,32 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Detrás de Cámaras" data-content1='null' data-content2='[{"url":"S9kkerWLmn4","texto":"video"},{"url":"GB_oacVPrD0","texto":"video"}]'></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='[{"url":"fTkaow603io","texto":"Video"}]' data-content2='[
+{"url":"rq-Q86_whk0","texto":"Video"},{"url":"6DN6s7SRy2U","texto":"Video"},{"url":"jelmRQDZ1kU","texto":"Video"},{"url":"rtaqkelD_mk","texto":"Video"}
+]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1='[{"url":"img/sonido/3/S-6_1T004.WAV","texto":"video"}]' data-content2='[{"url":"img/sonido/4/S-7_1T003.WAV","texto":"video"},{"url":"img/sonido/4/S-7_3T008.WAV","texto":"video"}]' ></div>
+                            <div class="imagenes section-item-foto" title="Imágenes" data-content1='[{"url":"img/fotos/3/_MG_9516N.JPG","texto":"Equipo de fotografía ajustando el Car Grip"},{"url":"img/fotos/3/_MG_9541N.JPG","texto":"Dron para el apoyo a la secuencia"},{"url":"img/fotos/3/_MG_9543N.JPG","texto":"Director de fotografía confirmando la trayectoria del Dron"},{"url":"img/fotos/3/_MG_9594N.JPG","texto":"Equipo de dirección revisando la secuencia"},{"url":"img/fotos/3/_MG_9722N.JPG","texto":"Director y director de foto revisando la secuencia en el monitor."},{"url":"img/fotos/3/_MG_9811N.JPG","texto":"Director y director de foto revisando la secuencia en el monitor."},{"url":"img/fotos/3/_MG_9819.JPG","texto":"Tomas directas de la secuencia – Elias tomando el “hueso pichon”"},{"url":"img/fotos/3/_MG_9823.JPG","texto":"Tomas directas de la secuencia – Elias tomando el “hueso pichon”"}]' data-content2='[{"url":"img/fotos/4/_MG_1277.JPG","texto":"Francisco en pleno combate"},{"url":"img/fotos/4/_MG_1341N.JPG","texto":"El director preparando emocionalmente a Robin , actor de Francisco"},{"url":"img/fotos/4/_MG_1351.JPG","texto":"El Set"},{"url":"img/fotos/4/_MG_1440.JPG","texto":"Francisco preparándose para el ataque"},{"url":"img/fotos/4/_MG_1448.JPG","texto":"Toma de la escena desde otra perspectiva"},{"url":"img/fotos/4/_MG_1561.JPG","texto":"Toma de la escena desde otra perspectiva"},{"url":"img/fotos/4/_MG_1566.JPG","texto":"Toma de la escena desde otra perspectiva"},{"url":"img/fotos/4/_MG_1695.JPG","texto":"Sofía apoyando a su hijo"},{"url":"img/fotos/4/_MG_1832.JPG","texto":"Elias descubriendo la agresividad y la tenacidad de Francisco"},{"url":"img/fotos/4/_MG_1845N).JPG","texto":"Fin del día, equipo desarmando el SET"}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='null' data-content2='null'></div>
                         </div>
                         <div class="parte1" paginas="1" carpeta="3"></div>
                         <div class="parte2" paginas="1" carpeta="4"></div>
-                        <div class="texto"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="3">
+                    <div class="block secuencia" orden="3" activo-menu="">
+                        
+                        <div class="area_squareup">
+                            <img src="img/animacion_secuencias/seqence5.gif">
+                        </div>  
+                        
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -265,22 +354,35 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Detrás de CámarasEntrevistas" data-content1='[{"url":"JPXR7ShVXaA","texto":"video"},{"url":"EuvA6qYuMgw","texto":"video"}]' data-content2='[{"url":"hsLWDg0bxbk","texto":"video"},{"url":"EcjHeLYLqNg","texto":"video"},{"url":"pmtgV8Uzwp8","texto":"video"}]' ></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='[{"url":"qHATJYbxFkw","texto":"Video"},{"url":"PiKKIqcfylg","texto":"Video"}]' data-content2='[{"url":"Rgikzj9FvcM","texto":"Video"},{"url":"mH_UaeeGoTM","texto":"Video"},{"url":"MODRG_x7LX8","texto":"Video"}]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1="null" data-content2='
+[{"url":"img/sonido/6/S-10_1T007.WAV","texto":"video"},{"url":"img/sonido/6/S-15_1T008.WAV","texto":"video"},{"url":"img/sonido/6/S-9_2T003.WAV","texto":"video"}]' ></div>
+                            <div class="imagenes section-item-foto unico_link" title="Imágenes" data-content1='[{"url":"img/fotos/5/_MG_6701N.JPG","texto":"Adecuación del set – Cargrip, personajes, y auto de acompañamiento."},{"url":"img/fotos/5/_MG_6716N.JPG","texto":"El director en trabajo previo con Luis Felipe en su primer día como Elías"},{"url":"img/fotos/5/_MG_6767N.JPG","texto":"Jhonny ajustando el encuandre y la secuencia de movimiento."},{"url":"img/fotos/5/_MG_6772N.JPG","texto":"Jhonny ajustando el encuandre y la secuencia de movimiento."},{"url":"img/fotos/5/_MG_6784N.JPG","texto":"Equipo de dirección trabajando en la secuencia"},{"url":"img/fotos/5/_MG_6786N.JPG","texto":"Luis Felipe preparándose"},{"url":"img/fotos/5/_MG_6788N.JPG","texto":"Encuadre listo en el monitor"},{"url":"img/fotos/5/_MG_6791n.JPG","texto":"Jhonny dando las últimas indicaciones antes de empezar a rodar la escena"},{"url":"img/fotos/5/_MG_6814n.JPG","texto":"Prueba de sonido desde el carro de acompañamiento"},{"url":"img/fotos/5/_MG_6893n.JPG","texto":"Revisión y discusión sobre la escena"}]' data-content2='[{"url":"img/fotos/6/_MG_6983.JPG","texto":"Sofia mirando a Elias"},{"url":"img/fotos/6/_MG_7067.JPG","texto":"La Familia discutiendo en la cena"},{"url":"img/fotos/6/_MG_7074.JPG","texto":"La Familia discutiendo en la cena"},{"url":"img/fotos/6/_MG_7079.JPG","texto":"Miller adecuando sus equipos de sonido según el tiro de cámara"},{"url":"img/fotos/6/_MG_7096.JPG","texto":"Francisco discutiendo con sus padres."},{"url":"img/fotos/6/_MG_7100.JPG","texto":"Francisco discutiendo con sus padres."},{"url":"img/fotos/6/_MG_7101.JPG","texto":"Francisco discutiendo con sus padres."},{"url":"img/fotos/6/_MG_7115.JPG","texto":"Francisco discutiendo con sus padres."},{"url":"img/fotos/6/_MG_7125.JPG","texto":"Francisco discutiendo con sus padres."},{"url":"img/fotos/6/_MG_7652.JPG","texto":"Elias husmea a francisco"},{"url":"img/fotos/6/_MG_7753.JPG","texto":"El director adecuando los últimos detalles del SET – partituras de movimientos"},{"url":"img/fotos/6/_MG_7807.JPG","texto":""},{"url":"img/fotos/6/_MG_7817.JPG","texto":"Juan Pablo Garay - Equipo de arte trabajando sobre la escenografía"},{"url":"img/fotos/6/_MG_7852.JPG","texto":"Elias confronta a Francisco"},{"url":"img/fotos/6/_MG_7866.JPG","texto":"Elias descubre los dibujos sórdidos que hace su hijo"},{"url":"img/fotos/6/_MG_8118.JPG","texto":"Equipo de arte, dirección y producción viendo la escena en vivo"},{"url":"img/fotos/6/_MG_8556.JPG","texto":""},{"url":"img/fotos/6/_MG_8573.JPG","texto":"Ensayo de preparación"},{"url":"img/fotos/6/_MG_8756.JPG","texto":""},{"url":"img/fotos/6/_MG_8776.JPG","texto":""},{"url":"img/fotos/6/_MG_9081.JPG","texto":""},{"url":"img/fotos/6/_MG_9082.JPG","texto":""},{"url":"img/fotos/6/_MG_9175.JPG","texto":"Sueño erótico de Francisco"}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='null' data-content2='null'></div>
                         </div>
                         <div class="parte1" paginas="1" carpeta="5"></div>
                         <div class="parte2" paginas="1,2,3,4,5,6" carpeta="6"></div>
-                        <div class="texto"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="4">
+                    <div class="block secuencia" orden="4" activo-menu="">
+                        <div class="animacion_pluma"></div>
+                        <div class="area_squaredown">
+                            <img src="img/animacion_secuencias/seqence8.gif">
+                        </div>
+                        
+                        <div class="area_squaredown c">
+                            <img src="img/animacion_secuencias/seqence9.gif">
+                        </div>  
+                        
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -289,22 +391,26 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Detrás de Cámaras" data-content1='null' data-content2='null'></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='null' data-content2='[{"url":"NkZAgadzr4g","texto":"Video"},{"url":"XM26AB6v7aI","texto":"Video"}]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1='[{"url":"img/sonido/7/S-2_5T009.WAV","texto":"video"},{"url":"img/sonido/7/X2T001.WAV","texto":"video"}]' data-content2='[{"url":"img/sonido/8/S-17_1T004.WAV","texto":"video"},{"url":"img/sonido/8/S-17_2T002.WAV","texto":"video"}]' ></div>
+                            <div class="imagenes section-item-foto" title="Imágenes" data-content1='[{"url":"img/fotos/7/_MG_3506.JPG","texto":""},{"url":"img/fotos/7/_MG_3562.JPG","texto":""},{"url":"img/fotos/7/_MG_3572.JPG","texto":""},{"url":"img/fotos/7/_MG_3587.JPG","texto":""},{"url":"img/fotos/7/_MG_3594.JPG","texto":""}]' data-content2='[{"url":"img/fotos/8/_MG_7209.JPG","texto":""},{"url":"img/fotos/8/_MG_7220.JPG","texto":""},{"url":"img/fotos/8/_MG_7277.JPG","texto":""},{"url":"img/fotos/8/_MG_7280.JPG","texto":""},{"url":"img/fotos/8/_MG_7365(BN).JPG","texto":""},{"url":"img/fotos/8/_MG_7379(BN).JPG","texto":""},{"url":"img/fotos/8/_MG_7442.JPG","texto":""},{"url":"img/fotos/8/_MG_7465.JPG","texto":""},{"url":"img/fotos/8/_MG_7514.JPG","texto":""}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='null' data-content2='null'></div>
                         </div>
                         <div class="parte1" paginas="1" carpeta="7"></div>
                         <div class="parte2" paginas="1,2" carpeta="8"></div>
-                        <div class="texto"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="5">
+                    <div class="block secuencia" orden="5" activo-menu="">
+                        
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -313,22 +419,25 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Detrás de Cámaras" data-content1='null' data-content2='[{"url":"1t8eUou0aDo","texto":"video"},{"url":"dm6DweKagyo","texto":"video"}]' ></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='[{"url":"4WSX9pA30Mc","texto":"Video"}]' data-content2='[{"url":"FK2qpl9gyPM","texto":"Video"},{"url":"yR8Xr1VHyZ0","texto":"Video"},{"url":"sIkKADVuvbQ","texto":"Video"}]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1='[{"url":"img/sonido/9/S-20_1T007.WAV","texto":"video"}]' data-content2='[{"url":"img/sonido/10/S-26_1T004.WAV","texto":"video"}]' ></div>
+                            <div class="imagenes section-item-foto" data-content1='[{"url":"img/fotos/9/_MG_9235.JPG","texto":""},{"url":"img/fotos/9/_MG_9240.JPG","texto":""},{"url":"img/fotos/9/_MG_9248.JPG","texto":""},{"url":"img/fotos/9/_MG_9289.JPG","texto":""},{"url":"img/fotos/9/_MG_9351.JPG","texto":""}]' data-content2='[{"url":"img/fotos/10/_MG_8124.JPG","texto":""},{"url":"img/fotos/10/_MG_8135.JPG","texto":""},{"url":"img/fotos/10/_MG_8153.JPG","texto":""},{"url":"img/fotos/10/_MG_8160.JPG","texto":""},{"url":"img/fotos/10/_MG_8162.JPG","texto":""},{"url":"img/fotos/10/_MG_8181(BN).JPG","texto":""},{"url":"img/fotos/10/_MG_8255.JPG","texto":""},{"url":"img/fotos/10/_MG_8560.JPG","texto":""}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='null' data-content2='null'></div>
                         </div>
                         <div class="parte1" paginas="1,2,3,4" carpeta="9"></div>
                         <div class="parte2" paginas="1,2,3,4,5,6" carpeta="10"></div>
-                        <div class="texto"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="6">
+                    <div class="block secuencia" orden="6" activo-menu="">
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -337,22 +446,34 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Detrás de Cámaras" data-content1='[{"url":"_MbTNnugvxU","texto":"video"}]' data-content2='[{"url":"X6orM2Ty2xs","texto":"video"},{"url":"Ur-5X_GdLF8","texto":"video"},{"url":"1kg0734U7DI","texto":"video"}]' ></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='[{"url":"Sl9COJMk7cM","texto":"Video"}]' data-content2='[{"url":"iNGaIt99c3U","texto":"Video"},{"url":"RSz4_cUUlrA","texto":"Video"}]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1="null" data-content2="null" ></div>
+                            <div class="imagenes section-item-foto" title="Imágenes" data-content1='[{"url":"img/fotos/11/_MG_4515.JPG","texto":""},{"url":"img/fotos/11/_MG_5089.JPG","texto":""},{"url":"img/fotos/11/_MG_5132.JPG","texto":""},{"url":"img/fotos/11/_MG_5139.JPG","texto":""}]' data-content2='[{"url":"img/fotos/12/_MG_0010.JPG","texto":""},{"url":"img/fotos/12/_MG_0059.JPG","texto":""},{"url":"img/fotos/12/_MG_0148.JPG","texto":""},{"url":"img/fotos/12/_MG_0176.JPG","texto":""},{"url":"img/fotos/12/_MG_0193.JPG","texto":""},{"url":"img/fotos/12/_MG_9070.JPG","texto":""}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='null' data-content2='null'></div>
                         </div>
                         <div class="parte1" paginas="1" carpeta="11"></div>
-                        <div class="parte2" paginas="1,2,3,4,5,6,7" carpeta="12"></div>
-                        <div class="texto"></div>
+                        <div class="parte2" paginas="1,2,3,4,5,6,7" carpeta="12">
+                            <div class="area_squaredown">
+                                <img src="img/animacion_secuencias/seqence12.gif" style="z-index: 8;width:462px;height:56px;top: 110px;position: absolute;margin-left: 27px;padding-top: 3px;box-sizing: border-box;padding-right: 28px;">
+                            </div>
+                        </div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="7">
+                    <div class="block secuencia" orden="7" activo-menu="">
+                        
+                         <div class="area_squareup">
+                            <img src="img/animacion_secuencias/seqence13.gif">
+                        </div>
+                        
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -361,22 +482,25 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Detrás de Cámaras" data-content1='null' data-content2='null' ></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='[{"url":"B0LOO6vNscM","texto":"Video"},{"url":"DIUMHOPQ19U","texto":"Video"}]' data-content2='[{"url":"5K0mDxINDTI","texto":"Video"},{"url":"98-vKy0pLSk","texto":"Video"}]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1="null" data-content2="null" ></div>
+                            <div class="imagenes section-item-foto" title="Imágenes" data-content1='[{"url":"img/fotos/13/_MG_9589(BN).JPG","texto":""},{"url":"img/fotos/13/_MG_9630.JPG","texto":""}]' data-content2='[{"url":"img/fotos/14/_MG_9178.JPG","texto":""},{"url":"img/fotos/14/_MG_9201.JPG","texto":""},{"url":"img/fotos/14/_MG_9225.JPG","texto":""}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='null' data-content2='null'></div>
                         </div>
                         <div class="parte1" paginas="1" carpeta="13"></div>
                         <div class="parte2" paginas="1,2,3" carpeta="14"></div>
-                        <div class="texto"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="8">
+                    <div class="block secuencia" orden="8" activo-menu="">
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -385,22 +509,243 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Mensajes" data-content1='null' data-content2='[{"url":"gWBskG2pyB4","texto":"video"},{"url":"auL0iAjvECs","texto":"video"}]' ></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='[{"url":"_EuJrq_lzMI","texto":"Video"},{"url":"JCBWnmmhCa8","texto":"Video"},{"url":"5AyO0WV0NYs","texto":"Video"}]' data-content2='[{"url":"Epqajy5rmuM","texto":"Video"},{"url":"Ih4sXBPH3iA","texto":"Video"}]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1="null" data-content2="null" ></div>
+                            <div class="imagenes section-item-foto" title="Imágenes" data-content1='[{"url":"img/fotos/15/_MG_2185(BN).jpg","texto":""},{"url":"img/fotos/15/_MG_2219(BN).jpg","texto":""},{"url":"img/fotos/15/_MG_2252(BN).jpg","texto":""},{"url":"img/fotos/15/_MG_2394.jpg","texto":""}]' data-content2='null' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='[{"url":"img/storyboard/15/Pag09.jpg","texto":""},{"url":"img/storyboard/15/Pag10.jpg","texto":""},{"url":"img/storyboard/15/Pag11.jpg","texto":""}]' data-content2='null'></div>
                         </div>
                         <div class="parte1" paginas="1,2,3" carpeta="15"></div>
                         <div class="parte2" paginas="1,2,3,4,5,6,7,8,9,10,11" carpeta="16"></div>
-                        <div class="texto"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="9">
+                    <div class="block secuencia" orden="9" activo-menu="">
+                        
+                        <div class="area_squareup">
+                          <div id="preview_box" class="preview_div">
+                                  <div id="p0" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image0.png">
+                                  </div>
+                                  <div id="p1" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image1.png">
+                                  </div>
+                                  <div id="p2" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image2.png">
+                                  </div>
+                                  <div id="p3" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image3.png">
+                                  </div>
+                                  <div id="p4" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image4.png">
+                                  </div>
+                                  <div id="p5" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image5.png">
+                                  </div>
+                                  <div id="p6" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image6.png">
+                                  </div>
+                                  <div id="p7" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image7.png">
+                                  </div>
+                                  <div id="p8" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image8.png">
+                                  </div>
+                                  <div id="p9" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image9.png">
+                                  </div>
+                                  <div id="p10" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image10.png">
+                                  </div>
+                                  <div id="p11" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image11.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/2/image12.png">
+                                  </div>
+                               </div>
+                        </div>
+                        
+                        <div class="area_squaredown">
+                          <div id="preview_box" class="preview_div">
+                                  <div id="p0" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image0.png">
+                                  </div>
+                                  <div id="p1" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image1.png">
+                                  </div>
+                                  <div id="p2" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image2.png">
+                                  </div>
+                                  <div id="p3" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image3.png">
+                                  </div>
+                                  <div id="p4" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image4.png">
+                                  </div>
+                                  <div id="p5" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image5.png">
+                                  </div>
+                                  <div id="p6" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image6.png">
+                                  </div>
+                                  <div id="p7" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image7.png">
+                                  </div>
+                                  <div id="p8" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image8.png">
+                                  </div>
+                                  <div id="p9" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image9.png">
+                                  </div>
+                                  <div id="p10" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image10.png">
+                                  </div>
+                                  <div id="p11" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image11.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image12.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image13.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image14.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image15.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image16.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image17.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image18.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image19.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image20.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image21.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image22.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image23.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image24.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image25.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image26.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image27.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image28.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image29.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image30.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image31.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image32.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image33.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image34.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image35.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image36.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image37.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image38.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image39.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image40.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image41.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image42.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image43.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image44.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image45.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image46.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image47.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image48.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image49.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image50.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image51.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image52.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image53.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image54.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/3/image55.png">
+                                  </div>
+                               </div>
+                        </div>  
+                        
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -409,22 +754,25 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Mensajes" data-content1='null' data-content2='[{"url":"0L3vbItATuQ","texto":"video"}]' ></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='[{"url":"sCyAS8UhoSY","texto":"Video"}]' data-content2='[{"url":"hO-z4iAKybc","texto":"Video"},{"url":"IiSOLxV4Axk","texto":"Video"},{"url":"edoqTF9Urd0","texto":"Video"},{"url":"7DhZpsgGg2k","texto":"Video"}]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1="null" data-content2="null" ></div>
+                            <div class="imagenes section-item-foto" title="Imágenes" data-content1='[{"url":"img/fotos/17/_MG_3837.JPG","texto":""},{"url":"img/fotos/17/_MG_3912.JPG","texto":""},{"url":"img/fotos/17/_MG_3925.JPG","texto":""}]' data-content2='[{"url":"img/fotos/18/_MG_3428.JPG","texto":""},{"url":"img/fotos/18/_MG_3431.JPG","texto":""},{"url":"img/fotos/18/_MG_4200.JPG","texto":""},{"url":"img/fotos/18/_MG_4205.JPG","texto":""}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='null' data-content2='[{"url":"img/storyboard/18/Pag14.jpg","texto":""},{"url":"img/storyboard/18/Pag15.jpg","texto":""},{"url":"img/storyboard/18/Pag16.jpg","texto":""},{"url":"img/storyboard/18/Pag17.jpg","texto":""},{"url":"img/storyboard/18/Pag18.jpg","texto":""}]'></div>
                         </div>
                         <div class="parte1" paginas="1" carpeta="17"></div>
                         <div class="parte2" paginas="1,2,3,4,5" carpeta="18"></div>
-                        <div class="texto"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="10">
+                    <div class="block secuencia" orden="10" activo-menu="">
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -433,22 +781,26 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Detrás de Cámaras" data-content1='[{"url":"UH_5PpuXXQ8","texto":"video"}]' data-content2='[{"url":"ioz8AuCBRx4","texto":"video"}]' ></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='[{"url":"3Hod_q58W2E","texto":"Video"},{"url":"qe9KoqJ83PI","texto":"Video"},{"url":"r9qI8wGV9OU","texto":"Video"}]' data-content2='[{"url":"Knba5PsB2nc","texto":"Video"}]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1="null" data-content2="null" ></div>
+                            <div class="imagenes section-item-foto" title="Imágenes" data-content1='[{"url":"img/fotos/19/_MG_5330(BN).JPG","texto":""},{"url":"img/fotos/19/_MG_5392(BN).JPG","texto":""},{"url":"img/fotos/19/_MG_5531.JPG","texto":""},{"url":"img/fotos/19/_MG_5800.JPG","texto":""},{"url":"img/fotos/19/_MG_5835(BN).JPG","texto":""},{"url":"img/fotos/19/_MG_5839(BN).JPG","texto":""}]' data-content2='[{"url":"img/fotos/20/_MG_5458.JPG","texto":""},{"url":"img/fotos/20/_MG_5475.JPG","texto":""}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='null' data-content2='null'></div>
                         </div>
                         <div class="parte1" paginas="1" carpeta="19"></div>
-                        <div class="parte2" paginas="1,2,3" carpeta="20"></div>
-                        <div class="texto"></div>
+                        <div class="parte2" paginas="1,2" carpeta="20"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="11">
+                    <div class="block secuencia" orden="11" activo-menu="">
+                        
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -457,22 +809,116 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Mensajes" data-content1='null' data-content2='null' ></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='[{"url":"sxwkqKggi-c","texto":"Video"}]' data-content2='[{"url":"v9Hk_aI_iw4","texto":"Video"},{"url":"-rCXhb8K3eQ","texto":"Video"}]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1="null" data-content2="null" ></div>
+                            <div class="imagenes section-item-foto" title="Imágenes" data-content1='[{"url":"img/fotos/21/_MG_4301(BN).JPG","texto":""},{"url":"img/fotos/21/_MG_4404(BN).JPG","texto":""},{"url":"img/fotos/21/_MG_4406(BN).JPG","texto":""},{"url":"img/fotos/21/_MG_4487.JPG","texto":""},{"url":"img/fotos/21/_MG_4492.JPG","texto":""},{"url":"img/fotos/21/_MG_4520.JPG","texto":""},{"url":"img/fotos/21/_MG_4534.JPG","texto":""},{"url":"img/fotos/21/_MG_4567.JPG","texto":""}]' data-content2='[{"url":"img/fotos/22/_MG_3906.JPG","texto":""},{"url":"img/fotos/22/_MG_3949.JPG","texto":""},{"url":"img/fotos/22/_MG_3957(BN).JPG","texto":""},{"url":"img/fotos/22/_MG_4001(BN).JPG","texto":""},{"url":"img/fotos/22/_MG_4040.JPG","texto":""}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='[{"url":"img/storyboard/21/Pag19.jpg","texto":""},{"url":"img/storyboard/21/Pag20.jpg","texto":""},{"url":"img/storyboard/21/Pag21.jpg","texto":""},{"url":"img/storyboard/21/Pag22.jpg","texto":""},{"url":"img/storyboard/21/Pag23.jpg","texto":""},{"url":"img/storyboard/21/Pag24.jpg","texto":""},{"url":"img/storyboard/21/Pag25.jpg","texto":""}]' data-content2='[{"url":"img/storyboard/22/Pag26.jpg","texto":""}]'></div>
                         </div>
                         <div class="parte1" paginas="1,2,3,4" carpeta="21"></div>
                         <div class="parte2" paginas="1,2,3" carpeta="22"></div>
-                        <div class="texto"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="12">
+                    <div class="block secuencia" orden="12" activo-menu="">
+                    <div class="area_squareup">
+                               <div id="preview_box" class="preview_div">
+                                  <div id="p0" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image0.png">
+                                  </div>
+                                  <div id="p1" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image1.png">
+                                  </div>
+                                  <div id="p2" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image2.png">
+                                  </div>
+                                  <div id="p3" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image3.png">
+                                  </div>
+                                  <div id="p4" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image4.png">
+                                  </div>
+                                  <div id="p5" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image5.png">
+                                  </div>
+                                  <div id="p6" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image6.png">
+                                  </div>'nu
+                                  <div id="p7" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image7.png">
+                                  </div>
+                                  <div id="p8" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image8.png">
+                                  </div>
+                                  <div id="p9" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image9.png">
+                                  </div>
+                                  <div id="p10" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image10.png">
+                                  </div>
+                                  <div id="p11" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image11.png">
+                                  </div>
+                                  <div id="p12" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image12.png">
+                                  </div>
+                                  <div id="p13" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image13.png">
+                                  </div>
+                                  <div id="p14" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image14.png">
+                                  </div>
+                                  <div id="p15" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image15.png">
+                                  </div>
+                                  <div id="p16" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image16.png">
+                                  </div>
+                                  <div id="p17" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image17.png">
+                                  </div>
+                                  <div id="p18" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image18.png">
+                                  </div>
+                                  <div id="p19" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image19.png">
+                                  </div>
+                                  <div id="p20" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image20.png">
+                                  </div>
+                                  <div id="p21" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image21.png">
+                                  </div>
+                                  <div id="p22" class="preview" style="visibility: visible;">
+                                     <img src="img/animacion_secuencias/sprites/1/image22.png">
+                                  </div>
+                                  <div id="p23" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image23.png">
+                                  </div>
+                                  <div id="p24" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image24.png">
+                                  </div>
+                                  <div id="p25" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image25.png">
+                                  </div>
+                                  <div id="p26" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image26.png">
+                                  </div>
+                                  <div id="p27" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image27.png">
+                                  </div>
+                                  <div id="p28" class="preview">
+                                     <img src="img/animacion_secuencias/sprites/1/image28.png">
+                                  </div>
+                               </div>
+                        </div>
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -481,22 +927,25 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Detrás de Cámaras"  data-content1='null' data-content2='null' ></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='[{"url":"MnqGvoUXitI","texto":"Video"},{"url":"0noAkGRB6_g","texto":"Video"},{"url":"Vmy-zAvN2SU","texto":"Video"}]' data-content2='[{"url":"oxR2dQ9YeVA","texto":"Video"},{"url":"QWT1RlIqwSA","texto":"Video"},{"url":"I3YMhmngsaY","texto":"Video"}]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1="null" data-content2="null" ></div>
+                            <div class="imagenes section-item-foto" title="Imágenes" data-content1='[{"url":"img/fotos/23/_MG_5983.JPG","texto":""},{"url":"img/fotos/23/_MG_6013.JPG","texto":""},{"url":"img/fotos/23/_MG_6020.JPG","texto":""},{"url":"img/fotos/23/_MG_6025.JPG","texto":""},{"url":"img/fotos/23/_MG_6029.JPG","texto":""},{"url":"img/fotos/23/_MG_6058.JPG","texto":""},{"url":"img/fotos/23/_MG_6064.JPG","texto":""}]' data-content2='[{"url":"img/fotos/24/_MG_4077(BN).JPG","texto":""},{"url":"img/fotos/24/_MG_6267.CR2(BN).JPG","texto":""},{"url":"img/fotos/24/_MG_6802.JPG","texto":""},{"url":"img/fotos/24/_MG_6845.JPG","texto":""},{"url":"img/fotos/24/_MG_6858.JPG","texto":""}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='[{"url":"img/storyboard/23/Pag27.jpg","texto":""},{"url":"img/storyboard/23/Pag28.jpg","texto":""},{"url":"img/storyboard/23/Pag29.jpg","texto":""},{"url":"img/storyboard/23/Pag30.jpg","texto":""}]' data-content2='[{"url":"img/storyboard/24/Pag31.jpg","texto":""},{"url":"img/storyboard/24/Pag32.jpg","texto":""},{"url":"img/storyboard/24/Pag33.jpg","texto":""},{"url":"img/storyboard/24/Pag34.jpg","texto":""},{"url":"img/storyboard/24/Pag35.jpg","texto":""}]'></div>
                         </div>
                         <div class="parte1" paginas="1,2,3" carpeta="23"></div>
                         <div class="parte2" paginas="1,2" carpeta="24"></div>
-                        <div class="texto"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
                             <div class="derecha"></div>
                         </div>
                     </div>
-                    <div class="block secuencia" orden="13">
+                    <div class="block secuencia" orden="13" activo-menu="">
                         <div class="barra_izquierda">
                             <a href="#selva" top="600"><div class="selva"></div></a>
                             <a href="#pasado" top="1200"><div class="pasado"></div></a>
@@ -505,15 +954,18 @@
                             <a href="#riqueza" top="3000"><div class="riqueza"></div></a>
                         </div>
                         <div class="barra_derecha">
-                            <div class="mensajes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="videos" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="audios" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="imagenes" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
-                            <div class="materiales" onclick='javascript:antorcha.popUpIn(".modal-pop-up")'></div>
+                            <div class="mensajes section-item-entrevista" title="Detrás de Cámaras" data-content1='null' data-content2='null' ></div>
+                            <div class="videos section-item-video" title="Videos" data-content1='null' data-content2='[{"url":"924PMg9hpqE","texto":"Video"},{"url":"mM5d8LFVn3U","texto":"Video"}]' ></div>
+                            <div class="audios section-item-audio" title="Audios" data-content1="null" data-content2="null" ></div>
+                            <div class="imagenes section-item-foto" title="Imágenes" data-content1='[{"url":"img/fotos/25/_MG_3831.JPG","texto":""},{"url":"img/fotos/25/_MG_4211.JPG","texto":""},{"url":"img/fotos/25/_MG_4234.JPG","texto":""}]' data-content2='[{"url":"img/fotos/26/_MG_2540.JPG","texto":""},{"url":"img/fotos/26/_MG_2542.JPG","texto":""},{"url":"img/fotos/26/_MG_2565.JPG","texto":""}]' ></div>
+                            <div class="materiales section-item-storyboard" title="Storyboard" data-content1='[{"url":"img/storyboard/25/Pag36.jpg","texto":""},{"url":"img/storyboard/25/Pag37.jpg","texto":""},{"url":"img/storyboard/25/Pag38.jpg","texto":""},{"url":"img/storyboard/25/Pag39.jpg","texto":""}]' data-content2='[{"url":"img/storyboard/26/Pag12.jpg","texto":""},{"url":"img/storyboard/26/Pag13.jpg","texto":""}]'></div>
                         </div>
                         <div class="parte1" paginas="1,2" carpeta="25"></div>
                         <div class="parte2" paginas="1,2" carpeta="26"></div>
-                        <div class="texto"></div>
+                        <div class="texto">
+                            <div class="cerrar"></div>
+                            <div class="loading"></div>
+                        </div>
                         <div class="atarraya"></div>
                         <div class="paginacion">
                             <div class="izquierda"></div>
@@ -528,11 +980,130 @@
         </div>
         <!-- Fin Contenedor Principal -->
        
-       
-       <!-- Scripts -->
+        <!-- Scripts -->
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="http://vjs.zencdn.net/4.12/video.js"></script>
-        <script type="text/javascript" src="js/acciones.js"></script>
+        <script type="text/javascript" src="js/funciones.js"></script>
+        <script type="text/javascript" src="js/principal.js"></script>
+        <script type="text/javascript" src="js/variables.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/acciones_herman.js"></script>
+        <script type="text/javascript" src="js/menu_inicio.js"></script>
+        <script type="text/javascript" src="js/barra_derecha.js"></script>
+        
+        <!-- ILUSTRACIONES -->
+        <script type="text/html" class="template-img-ilustraciones">
+            <li class="each-image col-lg-3 col-sm-4 col-xs-6 item-list-video"  data-poster="http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg" data-src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4">
+                <a href="#" class="detail-link" title="#DESCRIPTION#">
+                    <img src="#URL#">
+                </a>
+            </li>
+        </script>
+        <script type="text/html" class="template-detail-ilustraciones">
+            <div class="detail">
+                <img src="#URL#" class="detail-img">
+                <p class="detail-description">
+                    #DESCRIPTION#
+                </p>
+            </div>
+        </script>
+        <!-- FIN ILUSTRACIONES -->
+        <!-- ENTREVISTAS -->
+        <script type="text/html" class="template-video-entrevistas">
+            <li class="each-image col-lg-3 col-sm-4 col-xs-6 item-list-video"  data-poster="http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg" data-src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4">
+                <a href="#" class="detail-link-video" title="#DESCRIPTION#" data-video-src="#VIDEO#">
+                    <img src="https://i.ytimg.com/vi/#VIDEO#/mqdefault.jpg">
+                </a>
+            </li>
+        </script>
+        <script type="text/html" class="template-detail-entrevistas">
+            <div class="detail">
+                
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/##VIDEO##?modestbranding=0&;rel=0&;showinfo=0;autohide=1" frameborder="0" allowfullscreen></iframe>
+
+
+                <p class="detail-description">
+                    #DESCRIPTION#
+                </p>
+            </div>
+        </script>
+        <!-- FIN ENTREVISTAS -->
+        <!-- FOTOS -->
+        <script type="text/html" class="template-img-fotos">
+            <li class="each-image col-lg-3 col-sm-4 col-xs-6 item-list-video"  data-poster="http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg" data-src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4">
+                <a href="#" class="detail-link-foto" title="#DESCRIPTION#">
+                    <img src="#URL#">
+                </a>
+            </li>
+        </script>
+        <script type="text/html" class="template-detail-fotos">
+            <div class="detail">
+                <img src="#URL#" class="detail-img">
+                <p class="detail-description">
+                    #DESCRIPTION#
+                </p>
+            </div>
+        </script>
+        <!-- FIN FOTOS -->
+        <!-- SONIDOS -->
+        <script type="text/html" class="template-audio-audio">
+            <li class="each-image col-lg-3 col-sm-4 col-xs-6 item-list-audio"  data-poster="http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg" data-src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4">
+                <a href="#" class="detail-link-audio" title="#DESCRIPTION#" data-audio-src="#AUDIO#">
+                    <img src="http://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Folders-OS-Music-Library-Metro-icon.png">
+                </a>
+            </li>
+        </script>
+        <script type="text/html" class="template-detail-audio">
+            <div class="detail">
+                
+                <audio controls style="position: absolute;margin: auto;left: 0;right: 0;bottom: 0;top: 0;">
+                      <source src="##AUDIO##" type="audio/mpeg">
+                </audio>
+
+
+                <p class="detail-description" style="opacity: 0">
+                    #DESCRIPTION#
+                </p>
+            </div>
+        </script>
+        <!-- FIN SONIDOS -->
+        <!-- VIDEOS -->
+        <script type="text/html" class="template-video-video">
+            <li class="each-image col-lg-3 col-sm-4 col-xs-6 item-list-video"  data-poster="http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg" data-src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4">
+                <a href="#" class="detail-video-video" title="#DESCRIPTION#" data-video-src="#VIDEO#">
+                    <img src="https://i.ytimg.com/vi/#VIDEO#/mqdefault.jpg" />
+                </a>
+            </li>
+        </script>
+        <script type="text/html" class="template-detail-video">
+            <div class="detail">
+                
+                 <iframe width="100%" height="300" src="https://www.youtube.com/embed/##VIDEO##?modestbranding=0&;rel=0&;showinfo=0;autohide=1" frameborder="0" allowfullscreen></iframe>
+
+                <p class="detail-description">
+                    #DESCRIPTION#
+                </p>
+            </div>
+        </script>
+        <!-- FIN VIDEOS -->
+        
+        <!-- ENTREVISTAS -->
+        <script type="text/html" class="template-storyboard-fotos">
+            <li class="each-image col-lg-3 col-sm-4 col-xs-6 item-list-video"  data-poster="http://www.wired.com/images_blogs/rawfile/2013/11/offset_WaterHouseMarineImages_62652-2-660x440.jpg" data-src="http://kojo.com.au/wp-content/uploads/2013/09/Particles-loop-web.mp4">
+                <a href="#" class="detail-link-storyboard" title="#DESCRIPTION#">
+                    <img src="#URL#">
+                </a>
+            </li>
+        </script>
+        <script type="text/html" class="template-detail-storyboard">
+            <div class="detail">
+                <img src="#URL#" class="detail-img">
+                <p class="detail-description">
+                    #DESCRIPTION#
+                </p>
+            </div>
+        </script>
+        <!-- FIN ENTREVISTAS -->
+        
+        <!-- FIN Scripts-->
     </body>
 </html>
