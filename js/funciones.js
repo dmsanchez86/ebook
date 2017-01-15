@@ -150,7 +150,7 @@ function links(){
             imagen =  links_barra_izquierda[i].lastChild.className;
             $(links_barra_izquierda[i]).attr("activo","false");
             if(anterior == l){
-                $(links_barra_izquierda[i]).children().css("background-image","url(/ebookapp/img/menu/secuencia/"+imagen+"h.png)");
+                $(links_barra_izquierda[i]).children().css("background-image","url(img/menu/secuencia/"+imagen+"h.png)");
                 $(links_barra_izquierda[i]).children().css("cursor","pointer");
 				$(links_barra_izquierda[i]).attr("activo","true");
                 $(links_barra_izquierda[i]).children().attr("title","Cerrar Palabra Clave");
@@ -162,7 +162,7 @@ function links(){
             l = links_barra_izquierda[i].hash;
             imagen =  links_barra_izquierda[i].lastChild.className;
             $(links_barra_izquierda[i]).children().css("cursor","pointer");
-            $(links_barra_izquierda[i]).children().css("background-image","url(/ebookapp/img/menu/secuencia/"+imagen+".png)");
+            $(links_barra_izquierda[i]).children().css("background-image","url(img/menu/secuencia/"+imagen+".png)");
             $(links_barra_izquierda[i]).children().attr("title","Ir a Palabra Clave");
         }
     }
@@ -296,7 +296,7 @@ function fondos_menu_principal(){
         partes.each(function(olx,oel){
             $mycontador++;
             //console.log($mycontador);
-            $(this).css("background-image","url(/ebookapp/img/menu/secuencia/"+ $mycontador +".png)");
+            $(this).css("background-image","url(img/menu/secuencia/"+ $mycontador +".png)");
         });
     });
 }
@@ -354,7 +354,7 @@ function mostrar_contenido_derecha(e){
                 derecha.css("display","block"); // se activa la navegacion derecha porque tiene mas de una pagina para mostrar
                 
                 if (activo>0) { // Si la variable activa no llega a 0 se cambia el texto
-                    $($myparent).find(".texto").css("background-image","url(/ebookapp/img/secuencias/"+carpeta+"/"+rutas_imagenes[activo-1]+".png)"); // cambio el fondo del texto por el anterior
+                    $($myparent).find(".texto").css("background-image","url(img/secuencias/"+carpeta+"/"+rutas_imagenes[activo-1]+".png)"); // cambio el fondo del texto por el anterior
                     paginacion.attr("activo",(activo-1)); // se cambia el atributo de la paginacion
                     activo = parseInt(paginacion.attr("activo")); //  se le asigna el valor a la variable activo
                 }
@@ -379,7 +379,7 @@ function mostrar_contenido_derecha(e){
                 izquierda.css("display","block"); // cuando se la click siempre tendra que aparecer la navegación izquierda
                 
                 if (activo < (rutas_imagenes.length-1)) { // si la variable activa no llega al tope del arreglo
-                    $($myparent).find(".texto").css("background-image","url(/ebookapp/img/secuencias/"+carpeta+"/"+rutas_imagenes[activo+1]+".png)"); // cambio el fondo del texto por el siguiente
+                    $($myparent).find(".texto").css("background-image","url(img/secuencias/"+carpeta+"/"+rutas_imagenes[activo+1]+".png)"); // cambio el fondo del texto por el siguiente
                     paginacion.attr("activo",(activo+1)); // se cambia el atributo de la paginacion
                     activo = parseInt(paginacion.attr("activo")); //  se le asigna el valor a la variable activo
                     
@@ -402,7 +402,7 @@ function mostrar_contenido_derecha(e){
         $(contenedor_derecha).animate({scrollTop:parseInt($elparent)*600}, '1000',function(){
             $($myparent).find(".parte2").css("bottom","-265px").parent().find(".parte1").css("top","-265px");// Aca es donde se abren las compuertas
             $($myparent).find(".barra_derecha").css("z-index","5").parent().find(".barra_izquierda").css("z-index","5"); // se muestran los dos menus laterales
-            $($myparent).find(".texto").css("background-image","url(/ebookapp/img/secuencias/"+carpeta+"/"+rutas_imagenes[0]+".png)"); // siempre se muestra la primera imagen se cada secuencia
+            $($myparent).find(".texto").css("background-image","url(img/secuencias/"+carpeta+"/"+rutas_imagenes[0]+".png)"); // siempre se muestra la primera imagen se cada secuencia
             $($myparent).find(".texto").css("z-index","3");
             contenedor_derecha.style.overflowY  = "hidden"; // se oculta el scroll para que la sección quede fija
             $(bloque).css('overflow','hidden');
